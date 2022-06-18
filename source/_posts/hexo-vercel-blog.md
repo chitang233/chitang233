@@ -81,7 +81,7 @@ npm install hexo-cli -g
 
 <div class="yellow">
 
-> 如果使用 NixOS，由于 Nix Store 是只读的，你还需要在安装之前执行 `npm set prefix ~/.npm-global`，然后在 ~/.bashrc 或 ~/.zshrc 中添加
+> 如果使用 NixOS，由于 Nix Store 是只读的，你还需要在安装之前执行 `npm set prefix ~/.npm-packages`，然后在 ~/.bashrc 或 ~/.zshrc 中添加
 >  
 >  ```shell
 >  export PATH=~/.npm-packages/bin:$PATH
