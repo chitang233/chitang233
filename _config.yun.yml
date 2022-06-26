@@ -23,11 +23,11 @@ head:
 
 font:
   serif:
-    family: "Noto Serif CJK SC", "Noto Serif", "宋体", "SimSun", serif
+    family: '''Noto Serif CJK SC'', ''Noto Serif'', ''宋体'', ''SimSun'', serif'
   sans_serif:
-    family: "MiSans", sans-serif
+    family: '''MiSans'', sans-serif'
   monospace:
-    family: "JetBrains Mono", "Fira Code", "JetBrainsMono Nerd Font", "FiraCode Nerd Font", monospace
+    family: '''JetBrains Mono'', ''Fira Code'', ''JetBrainsMono Nerd Font'', ''FiraCode Nerd Font'', monospace'
 
 preload:
   style:
