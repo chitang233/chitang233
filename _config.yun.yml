@@ -22,6 +22,11 @@ head:
     remix-icon: //fastly.jsdelivr.net/npm/remixicon/fonts/remixicon.css
 
 font:
+  cdn:
+    enable: true
+    lib:
+      - /css/JetBrains%20Mono.css
+      - /css/Noto%20Serif%20SC.css
   serif:
     family: '''Noto Serif CJK SC'', ''Noto Serif'', ''宋体'', ''SimSun'', serif'
   sans_serif:
