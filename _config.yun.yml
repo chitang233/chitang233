@@ -28,7 +28,7 @@ font:
       - /css/JetBrains%20Mono.css
       - /css/Noto%20Serif%20SC.css
   serif:
-    family: '''Noto Serif CJK SC'', ''Noto Serif'', ''宋体'', ''SimSun'', serif'
+    family: '''Noto Serif CJK SC'', ''Noto Serif'', ''Noto Serif SC'', ''宋体'', ''SimSun'', serif'
   sans_serif:
     family: '''MiSans'', sans-serif'
   monospace:
