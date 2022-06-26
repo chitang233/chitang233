@@ -21,6 +21,14 @@ head:
   css:
     remix-icon: //fastly.jsdelivr.net/npm/remixicon/fonts/remixicon.css
 
+font:
+  serif:
+    family: "Noto Serif CJK SC", "Noto Serif", "宋体", "SimSun", serif
+  sans_serif:
+    family: "MiSans", sans-serif
+  monospace:
+    family: "JetBrains Mono", "Fira Code", "JetBrainsMono Nerd Font", "FiraCode Nerd Font", monospace
+
 preload:
   style:
     - /css/hexo-theme-yun.css
