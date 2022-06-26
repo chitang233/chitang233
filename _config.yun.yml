@@ -27,7 +27,7 @@ font:
   sans_serif:
     family: '''MiSans'', sans-serif'
   monospace:
-    family: '''JetBrains Mono'', ''Fira Code'', ''JetBrainsMono Nerd Font'', ''FiraCode Nerd Font'', monospace'
+    family: '''JetBrainsMono Nerd Font'', ''FiraCode Nerd Font'', ''JetBrains Mono'', ''Fira Code'', monospace'
 
 preload:
   style:
