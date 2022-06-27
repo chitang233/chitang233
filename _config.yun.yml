@@ -27,7 +27,7 @@ font:
   cdn:
     enable: true
     lib:
-      - /css/JetBrains%20Mono.css
+      - //fonts.loli.net/css?family=JetBrains%20Mono
       - /css/Noto%20Serif%20SC.css
   serif:
     family: '''Noto Serif CJK SC'', ''Noto Serif'', ''Noto Serif SC'', ''宋体'', ''SimSun'', serif'
