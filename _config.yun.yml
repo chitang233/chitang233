@@ -19,7 +19,6 @@ google_analytics:
 
 head:
   css:
-    jetbrains-mono: /css/JetBrains%20Mono.css
     noto-serif: /css/Noto%20Serif%20SC.css
     remix-icon: //fastly.jsdelivr.net/npm/remixicon/fonts/remixicon.css
 
