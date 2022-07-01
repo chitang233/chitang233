@@ -79,8 +79,6 @@ npm install hexo-cli -g
 
 </div>
 
-<div class="yellow">
-
 > 如果使用 NixOS，由于 Nix Store 是只读的，你还需要在安装之前执行 `npm set prefix ~/.npm-packages`，然后在 ~/.bashrc 或 ~/.zshrc 中添加
 >  
 >  ```shell
@@ -89,8 +87,6 @@ npm install hexo-cli -g
 >  ```
 >  
 >  这会将 npm 的 PATH 变更到你的家目录。
-
-</div>
 
 在你的硬盘中建立一个文件夹，这个文件夹在下面的部分会被叫做**工作目录**
 
@@ -104,13 +100,31 @@ hexo init
 
 ```bash
 hexo clean
-hexo g
-hexo s
+hexo generate
+hexo server
 ```
 
 没有意外的话，使用浏览器打开 http://localhost:4000 就能够看到 Hexo 的默认首页了
 
 ![Hexo 默认首页](/images/hexo-vercel-blog/hexo-default.png)
+
+以及，这里有一些常用的 Hexo 命令
+
+| 命令              | 作用             |
+|-----------------|----------------|
+| `hexo clean`    | 清理缓存文件         |
+| `hexo generate` | 生成静态页面文件       |
+| `hexo server`   | 运行一个本地 Web 服务器 |
+| `hexo new`      | 新建一个博文         |
+| `hexo new page` | 新建一个页面         |
+
+<div class="info">
+
+> 使用 `hexo new` 新建的博文建议前往 `sources/_posts` 中将源文件的文件名修改为一串较为短小的英文
+> 否则你的 URL 将会是又臭又长的一大~~坨~~截
+> 只要不更改文件中的 `title` 字段，可见的标题并不会受影响
+
+</div>
 
 ### 配置
 
