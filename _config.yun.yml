@@ -68,14 +68,14 @@ social:
     link: mailto:chitang233@proton.me
     icon: ri:mail-line
     color: "#8E71C1"
-  - name: 网易云音乐
-    link: https://music.163.com/#/user/home?id=474383058
-    icon: ri:netease-cloud-music-line
-    color: "#C10D0C"
-  - name: 知乎
-    link: https://www.zhihu.com/people/chi-tang-jun-23
-    icon: ri:zhihu-line
-    color: "#0084FF"
+  # - name: 网易云音乐
+  #   link: https://music.163.com/#/user/home?id=474383058
+  #   icon: ri:netease-cloud-music-line
+  #   color: "#C10D0C"
+  # - name: 知乎
+  #   link: https://www.zhihu.com/people/chi-tang-jun-23
+  #   icon: ri:zhihu-line
+  #   color: "#0084FF"
   - name: bilibili
     link: https://space.bilibili.com/113980518
     icon: ri:bilibili-line
@@ -88,11 +88,11 @@ social:
     link: https://t.me/chitang_group
     icon: ri:telegram-fill
     color: "#0088CC"
-  - name: QQ
-    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: https://wpa.qq.com/msgrd?v=3&uin=1194927439&site=qq&menu=yes
-    icon: ri:qq-line
-    color: "#12B7F5"
+  # - name: QQ
+  #   # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
+  #   link: https://wpa.qq.com/msgrd?v=3&uin=1194927439&site=qq&menu=yes
+  #   icon: ri:qq-line
+  #   color: "#12B7F5"
 #  - name: Discord Channel
 #    link: https://discord.gg/SrJVKFj5XC
 #    icon: ri:discord-fill
