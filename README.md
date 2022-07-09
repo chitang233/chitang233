@@ -47,7 +47,7 @@ YAML   0 secs          ███████████████████
 
 [![Personal Homepage](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://home.chitang.tech)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chitang233)
-[![ProtonMail](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](malito:chitang233@proton.me)
+[![ProtonMail](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:chitang233@proton.me)
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/chitang233)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCZjCVTcX3O6-hhFAurGJitg)
 
