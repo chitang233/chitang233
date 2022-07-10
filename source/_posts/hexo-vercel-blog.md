@@ -7,6 +7,8 @@ tags:
   - Guide
 abbrlink: 58336
 date: 2022-06-12 17:42:09
+type: bilibili
+url: https://space.bilibili.com/113980518
 ---
 
 ## 在开始前，你需要知道的
