@@ -19,14 +19,13 @@ google_analytics:
 
 head:
   css:
-    noto-serif: /css/Noto%20Serif%20SC.css
-    remix-icon: //fastly.jsdelivr.net/npm/remixicon/fonts/remixicon.css
+    remix-icon: /css/remixicon.css
 
 font:
   cdn:
     enable: true
     lib:
-      - //fonts.loli.net/css?family=JetBrains%20Mono
+      - /css/JetBrains%20Mono.css
       - /css/Noto%20Serif%20SC.css
   serif:
     family: '''Noto Serif CJK SC'', ''Noto Serif'', ''Noto Serif SC'', ''宋体'', ''SimSun'', serif'
@@ -84,8 +83,8 @@ social:
     link: https://t.me/chitang233
     icon: ri:telegram-line
     color: "#0088CC"
-  - name: Telegram Group
-    link: https://t.me/chitang_group
+  - name: Telegram Channel
+    link: https://t.me/chitangchannel
     icon: ri:telegram-fill
     color: "#0088CC"
   # - name: QQ
@@ -134,7 +133,7 @@ engine_search:
 
 search:
   modal: true
-  bg_image: https://fastly.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-2.jpg
+  bg_image: /images/bg/stars-timing-2.jpg
   # dark_bg_image: xxx
   # placeholder:
 
@@ -157,16 +156,16 @@ scrollreveal:
   enable: true
   targets:
     - .post-card
-    - .post-content img
+    - .markdown-body img
 
 cursor:
-  enable: false
-  default: https://fastly.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/pointer.cur
-  pointer: https://fastly.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/link.cur
-  text: https://fastly.jsdelivr.net/gh/YunYouJun/cdn/css/md-cursors/text.cur
+  enable: true
+  default: /css/md-cursors/pointer.cur
+  pointer: /css/md-cursors/link.cur
+  text: /css/md-cursors/text.cur
 
 sidebar:
-  bg_image: https://fastly.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-1.jpg
+  bg_image: /images/bg/stars-timing-1.jpg
   bg_position: bottom 3rem center
   tagcloud:
     enable: false
@@ -299,7 +298,7 @@ footer:
     animated: true
     color: "#0078E7"
   powered:
-    enable: true
+    enable: version
   live_time:
     enable: true
     prefix: 本博客已运行
@@ -331,7 +330,7 @@ comment:
 github_issues:
   enable: false
   username: chitang233
-  repository: chitang233.github.io
+  repository: chitang233
   filters: is:issue
 
 utterances:
@@ -363,3 +362,8 @@ wordcount:
 
 wordcloud:
   enable: true
+
+medium_zoom: true
+
+
+
