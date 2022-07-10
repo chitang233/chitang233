@@ -45,7 +45,7 @@ YAML   0 secs          ███████████████████
 
 #### 📱 Find Me
 
-[![Personal Homepage](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://home.chitang.tech)
+[![Personal Homepage](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://chitang.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chitang233)
 [![ProtonMail](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:chitang233@proton.me)
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/chitang233)
