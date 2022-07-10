@@ -7,24 +7,20 @@ tags:
   - Guide
 abbrlink: 58336
 date: 2022-06-12 17:42:09
-type: bilibili
-url: https://space.bilibili.com/113980518
 ---
 
 ## 在开始前，你需要知道的
 
 本文简述了使用 Hexo 搭建个人博客的过程
 
-但手上没有机器，电脑又不支持 Hackintosh，故该教程的内容对于 macOS 不一定适用
+理论上适用于包括 Windows, Linux, Android, macOS 在内的所有系统，但手上没有 Mac，电脑又不支持 Hackintosh，故该教程的内容对于 macOS 不一定适用
 
 在阅读本文前，你需要准备的有:
 
-- 一台电脑
-- 能够访问 GitHub 的网络环境
+- 一个能够访问 GitHub 的设备
 - 一个 Vercel 帐号
 - 一个 GitHub 帐号
-- 一段时间
-- 一双灵活的手
+- 一段空余的时间
 - 初中的英语水平或熟练使用翻译工具
 
 文章包括且不限于:
@@ -81,6 +77,7 @@ npm install hexo-cli -g
 
 </div>
 
+<div class="info">
 > 如果使用 NixOS，由于 Nix Store 是只读的，你还需要在安装之前执行 `npm set prefix ~/.npm-packages`，然后在 ~/.bashrc 或 ~/.zshrc 中添加
 >  
 >  ```shell
@@ -89,7 +86,8 @@ npm install hexo-cli -g
 >  ```
 >  
 >  这会将 npm 的 PATH 变更到你的家目录。
-
+</div>
+	
 在你的硬盘中建立一个文件夹，这个文件夹在下面的部分会被叫做**工作目录**
 
 使用这条命令初始化 Hexo
