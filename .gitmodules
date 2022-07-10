@@ -1,4 +1,0 @@
-[submodule "themes/yun"]
-	path = themes/yun
-	url = git@github.com:YunYouJun/hexo-theme-yun
-	branch = master
