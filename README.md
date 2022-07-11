@@ -22,8 +22,6 @@ CSS              0 secs          ░░░░░░░░░░░░░░░�
 
 <!--END_SECTION:waka-->
 
-![Genshin Impact information](https://genshin-card.getloli.com/rand/83264638.png)
-
 ---
 
 #### 💻 Workspaces 
@@ -43,7 +41,6 @@ CSS              0 secs          ░░░░░░░░░░░░░░░�
 
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 ![Microsoft Azure](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
 
 ---
@@ -56,19 +53,9 @@ CSS              0 secs          ░░░░░░░░░░░░░░░�
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/chitang233)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCZjCVTcX3O6-hhFAurGJitg)
 
-#### 📕 Latest Blog Posts
-
-<!-- BLOG-POST-LIST:START -->
-- [使用 Hexo 与 Vercel 零成本打造你的个人博客](https://chitang.tech/posts/hexo-vercel-blog/)
-- [安卓部署 GrassCutter 简易教程](https://chitang.tech/posts/grasscutter-android/)
-- [andOTP - 开源, 多协议的手机验证器](https://chitang.tech/posts/andOTP/)
-- [Arch Linux 折腾指南](https://chitang.tech/posts/arch-guide/)
-- [Howdy - Linux 的人脸识别](https://chitang.tech/posts/howdy/)
-<!-- BLOG-POST-LIST:END -->
-
 ---
 
-#### 🧑‍💻 Used Programming Language
+#### 🧑‍💻 Used Languages
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
@@ -81,13 +68,25 @@ CSS              0 secs          ░░░░░░░░░░░░░░░�
 #### 🕹 Games
 
 [![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/chitang233)
-![Minecraft](https://img.shields.io/badge/chitang-green?style=for-the-badge&logo=Minecraft&logoColor=white)
+[![Minecraft](https://img.shields.io/badge/chitang-green?style=for-the-badge&logo=Minecraft&logoColor=white)](https://namemc.com/profile/chitang.2)
+
+![Genshin Impact information](https://genshin-card.getloli.com/rand/83264638.png)
 
 ---
 
 #### 🎁 Donate
 
 [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://patreon.com/chitang233)
-[![爱发电](https://img.shields.io/badge/爱发电-red?style=flat-square&logo=afdian?style=for-the-badge&logoColor=white)](https://afdian.net/@chitang)
+[![爱发电](https://img.shields.io/badge/爱发电-purple?style=flat-square&logo=afdian?style=for-the-badge&logoColor=white)](https://afdian.net/@chitang)
 
 ---
+
+#### 📕 Latest Blog Posts
+
+<!-- BLOG-POST-LIST:START -->
+- [使用 Hexo 与 Vercel 零成本打造你的个人博客](https://chitang.tech/posts/hexo-vercel-blog/)
+- [安卓部署 GrassCutter 简易教程](https://chitang.tech/posts/grasscutter-android/)
+- [andOTP - 开源, 多协议的手机验证器](https://chitang.tech/posts/andOTP/)
+- [Arch Linux 折腾指南](https://chitang.tech/posts/arch-guide/)
+- [Howdy - Linux 的人脸识别](https://chitang.tech/posts/howdy/)
+<!-- BLOG-POST-LIST:END -->
