@@ -128,7 +128,7 @@ hexo server
 
 ### 配置
 
-在工作目录下，能够看到新生成的 `_config.json`，这是 Hexo 的配置文件
+在工作目录下，能够看到新生成的 `_config.yml`，这是 Hexo 的配置文件
 
 #### Site
 
