@@ -45,7 +45,7 @@ sudo apt-get install -y nodejs npm
 
 对于 Debian，使用 root 用户执行以下指令
 
-```
+```bash
 curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 apt-get install -y nodejs npm
 ```
@@ -78,6 +78,7 @@ npm install hexo-cli -g
 </div>
 
 <div class="info">
+
 > 如果使用 NixOS，由于 Nix Store 是只读的，你还需要在安装之前执行 `npm set prefix ~/.npm-packages`，然后在 ~/.bashrc 或 ~/.zshrc 中添加
 >  
 >  ```shell
@@ -86,6 +87,7 @@ npm install hexo-cli -g
 >  ```
 >  
 >  这会将 npm 的 PATH 变更到你的家目录。
+
 </div>
 	
 在你的硬盘中建立一个文件夹，这个文件夹在下面的部分会被叫做**工作目录**
