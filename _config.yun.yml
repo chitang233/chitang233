@@ -248,7 +248,7 @@ post_meta:
 
 post_edit:
   enable: true
-  url: https://github.com/chitang233/chitang233/tree/hexo/source
+  url: https://github.com/chitang233/chitang233/tree/hexo/source/
 
 codeblock:
   copy_btn: true
