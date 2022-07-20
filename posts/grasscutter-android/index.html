@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="Chi_Tang"><meta name="copyright" content="Chi_Tang"><meta name="generator" content="Hexo 6.0.0"><meta name="theme" content="hexo-theme-yun"><title>安卓部署 GrassCutter 简易教程 | Chi_Tang's Blog</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="/css/JetBrains%20Mono.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/css/Noto%20Serif%20SC.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.3.3/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="dns-prefetch" href="https://cos.yunyoujun.cn"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"chitang.tech","root":"/","title":"池塘的博客","version":"1.10.5","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/search.xml"},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false,"src":"/js/search/local-search.js"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="alternate" href="/atom.xml" title="Chi_Tang's Blog" type="application/atom+xml"><link rel="stylesheet" href="/css/remixicon.css"><meta name="description" content="博主:文章不是我写的，左边联系方式是我个人的而不是文章原作者这边是授权发布如果有问题的话建议去 @genshinhelper 和 @genkitCN_chat     看前须知：此教程必须有root，没root痛快衮。别来问没root怎么办，打钱也不行。此教程也需要你有一定的Linux基础。    下载软件下载并安装Linux Deploy。 https:&#x2F;&#x2F;github.com&#x2F;meefik&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安卓部署 GrassCutter 简易教程">
+<meta property="og:url" content="https://chitang.tech/posts/grasscutter-android/index.html">
+<meta property="og:site_name" content="Chi_Tang&#39;s Blog">
+<meta property="og:description" content="博主:文章不是我写的，左边联系方式是我个人的而不是文章原作者这边是授权发布如果有问题的话建议去 @genshinhelper 和 @genkitCN_chat     看前须知：此教程必须有root，没root痛快衮。别来问没root怎么办，打钱也不行。此教程也需要你有一定的Linux基础。    下载软件下载并安装Linux Deploy。 https:&#x2F;&#x2F;github.com&#x2F;meefik&#x2F;">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://chitang.tech/images/grasscutter-android/files.png">
+<meta property="article:published_time" content="2022-05-01T02:26:34.000Z">
+<meta property="article:modified_time" content="2022-07-20T08:15:36.706Z">
+<meta property="article:author" content="Chi_Tang">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="GrassCutter">
+<meta property="article:tag" content="原神">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://chitang.tech/images/grasscutter-android/files.png"><script>(function() {
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><canvas id="trianglifyContainer"></canvas><script defer src="https://fastly.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js"></script><script>document.addEventListener("DOMContentLoaded", () => {
+  const pattern = trianglify({
+    width: 800,
+    height: 600,
+    cellSize: 75,
+    palette: ["YlGnBu", "GnBu", "Purples", "Blues"],
+  });
+  const canvasOpts = {
+    applyCssScaling: false
+  }
+  document.body.appendChild(pattern.toCanvas(trianglifyContainer, canvasOpts));
+});</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="Chi_Tang"><img width="96" loading="lazy" src="/images/avatar.webp" alt="Chi_Tang"></a><div class="site-author-name"><a href="/about/">Chi_Tang</a></div><a class="site-name" href="/about/site.html">Chi_Tang's Blog</a><sub class="site-subtitle">池塘的博客</sub><div class="site-description">只是一个普通的初中生罢了</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">6</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">11</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">11</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><span class="icon iconify" data-icon="ri:rss-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/chitang233" title="GitHub" target="_blank" style="color:#181717"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:chitang233@proton.me" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/113980518" title="bilibili" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/chitang233" title="Telegram" target="_blank" style="color:#0088CC"><span class="icon iconify" data-icon="ri:telegram-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/chitangchannel" title="Telegram Channel" target="_blank" style="color:#0088CC"><span class="icon iconify" data-icon="ri:telegram-fill"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="友链" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E8%BD%AF%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">下载软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-Linux-Deploy"><span class="toc-number">2.</span> <span class="toc-text">配置 Linux Deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2"><span class="toc-number">3.</span> <span class="toc-text">部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5"><span class="toc-number">4.</span> <span class="toc-text">连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83"><span class="toc-number">5.</span> <span class="toc-text">配置环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83"><span class="toc-number">5.1.</span> <span class="toc-text">基本环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MongoDB-%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">5.2.</span> <span class="toc-text">MongoDB 数据库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-%E7%8E%AF%E5%A2%83"><span class="toc-number">5.3.</span> <span class="toc-text">Java 环境</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">6.</span> <span class="toc-text">搭建服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E9%9C%80%E6%B1%82"><span class="toc-number">7.</span> <span class="toc-text">特殊需求</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://chitang.tech/posts/grasscutter-android/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Chi_Tang"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Chi_Tang's Blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">安卓部署 GrassCutter 简易教程<a class="post-edit-link" href="https://github.com/chitang233/chitang233/tree/hexo/source/_posts/grasscutter-android.md" target="_blank" title="编辑" rel="noopener"><span class="icon iconify" data-icon="ri:edit-line"></span></a></h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="创建时间：2022-05-01 10:26:34" itemprop="dateCreated datePublished" datetime="2022-05-01T10:26:34+08:00">2022-05-01</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-2-line"></span></span> <time title="修改时间：2022-07-20 16:15:36" itemprop="dateModified" datetime="2022-07-20T16:15:36+08:00">2022-07-20</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><span class="icon iconify" data-icon="ri:file-word-line"></span></span> <span title="本文字数">949</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><span class="icon iconify" data-icon="ri:timer-line"></span></span> <span title="阅读时长">4m</span></span></span><div class="post-classify"><span class="post-tag"><a class="tag-item" href="/tags/Android/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">Android</span></a><a class="tag-item" href="/tags/GrassCutter/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">GrassCutter</span></a><a class="tag-item" href="/tags/%E5%8E%9F%E7%A5%9E/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">原神</span></a></span></div><div class="post-author"><span class="author-name">Telegram@feb_6th</span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><blockquote>
+<p>博主:<br>文章不是我写的，左边联系方式是我个人的而不是文章原作者<br>这边是授权发布<br>如果有问题的话建议去 <a target="_blank" rel="noopener" href="https://t.me/genshinhelper">@genshinhelper</a> 和 <a target="_blank" rel="noopener" href="https://t.me/genkitCN_chat">@genkitCN_chat</a></p>
+</blockquote>
+<div class="warning">
+
+<blockquote>
+<p>看前须知：此教程必须有root，没root痛快衮。别来问没root怎么办，打钱也不行。<br>此教程也需要你有一定的Linux基础。</p>
+</blockquote>
+</div>
+
+<h2 id="下载软件"><a href="#下载软件" class="headerlink" title="下载软件"></a>下载软件</h2><p>下载并安装Linux Deploy。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/meefik/linuxdeploy">https://github.com/meefik/linuxdeploy</a></p>
+<h2 id="配置-Linux-Deploy"><a href="#配置-Linux-Deploy" class="headerlink" title="配置 Linux Deploy"></a>配置 Linux Deploy</h2><p>进入 Linux Deploy,点击右下角配置按钮，修改选项为如下内容</p>
+<p>发行版改为 arch<br>架构改为 aarch64<br>源地址改为 <code>http://mirrors.ustc.edu.cn/archlinuxarm</code><br>安装类型改为 目录<br>安装路径改为 <code>/data/linux</code><br>用户名和密码随意<br>本地化改为 <code>zh_CN.UTF-8</code><br>继续往下翻，找到 ssh ，勾选”启用”</p>
+<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>点开右上角菜单，点击部署，然后等待。<br>出现 <code>&lt;&lt;deploy</code> 即完成。</p>
+<h2 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h2><p>部署完之后点击下方的启动。<br>然后使用 ssh 客户端(如 juicessh)连接.<br>地址 <code>127.0.0.1</code> ,用户名和密码与刚才设置的相同.<br>如果跳出第一次连接的窗口，点击确定。<br>如果操作无误，你应该能看到命令行了。</p>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="基本环境"><a href="#基本环境" class="headerlink" title="基本环境"></a>基本环境</h3><p>输入命令</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> pacman -Sy --overwrite <span class="token punctuation">\</span>* <span class="token function">git</span> <span class="token function">wget</span> <span class="token function">curl</span> mitmproxy</code></pre>
+
+<h3 id="MongoDB-数据库"><a href="#MongoDB-数据库" class="headerlink" title="MongoDB 数据库"></a>MongoDB 数据库</h3><blockquote>
+<p>如果按照下面的教程，执行时提示”非法指令”,这是因为你的设备较老。请尝试使用4.4.20版本。</p>
+</blockquote>
+<p>下载 <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1rdR3TeWtvQt8z738iyfGX6riSXCbrIe1/">mongod 主程序 5.0.8</a> (在骁龙 865 测试可用)<br>下载 <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1sQEMyvhqZoIWiZcbFsL4r6-8-1ZY1BVz">mongod 主程序 4.4.20</a> (在骁龙 660 测试可用)<br>下载来的 mongod 主程序扔进安装路径下的 <code>/usr/bin</code> ,并将权限修改为 755 .如果文件名有改变，请将其改为 <code>mongod</code><br>然后登陆进 ssh ，输入</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">mkdir</span> /usr/db<span class="token punctuation">;</span><span class="token function">sudo</span> mongod --dbpath /usr/db --bind_ip <span class="token number">127.0</span>.0.1</code></pre>
+
+<p><code>--bind_ip</code>项请按照需求修改。默认情况下<code>127.0.0.1</code>足矣。</p>
+<h3 id="Java-环境"><a href="#Java-环境" class="headerlink" title="Java 环境"></a>Java 环境</h3><p>登录进 ssh ，输入:</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">wget</span> https://d6.injdk.cn/oraclejdk/17/jdk-17_linux-aarch64_bin.tar.gz<span class="token punctuation">;</span><span class="token function">tar</span> xzvf jdk-17_linux-aarch64_bin.tar.gz</code></pre>
+
+<p>命令完成后，在 <code>~/.bashrc</code> 中填上以下几句:</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Java environment</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">JHOME</span><span class="token operator">=~</span>/jdk-17.0.1
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token variable">$JHOME</span>/bin:<span class="token environment constant">$PATH</span></code></pre>
+
+<details>
+  <summary>如果不会在终端使用编辑器请使用以下命令</summary>
+  <pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> <span class="token operator">>></span> ~/.bashrc <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+export JHOME=~/jdk-17.0.1
+export PATH=\<span class="token variable">$JHOME</span>/bin:\<span class="token environment constant">$PATH</span>
+EOF</span></code></pre>
+</details>
+
+<p>最后，输入</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">source</span> ~/.bashrc<span class="token punctuation">;</span>java -version</code></pre>
+
+<p>如果产生了如下输出，Java 配置即完成.</p>
+<pre class="language-none"><code class="language-none">java version &quot;17.0.1&quot; 2021-10-19 LTS
+Java(TM) SE Runtime Environment (build 17.0.1+12-LTS-39)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)</code></pre>
+
+<h2 id="搭建服务器"><a href="#搭建服务器" class="headerlink" title="搭建服务器"></a>搭建服务器</h2><p>搭建服务器的操作其实大同小异，可以参考<a target="_blank" rel="noopener" href="https://blog.tomys.top/2022-04/GenshinTJ/">此教程</a>.<br>本教程只阐述不同的部分。<br>在服务器文件放好后，进入目录，输入</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> java -jar <span class="token operator">&lt;</span>grasscutter.jar<span class="token operator">></span></code></pre>
+
+<p>来开启服务器。</p>
+<blockquote>
+<p>主文件名因人而异，按需修改。<br>例如现在我的文件结构是这样<br><img src="/images/grasscutter-android/files.png" alt="floder-content" loading="lazy"><br>主文件名是 <code>grasscutterZH-dev-775f4cb.jar</code><br>则应该运行:<br>  <pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> java -jar grasscutterZH-dev-775f4cb.jar</code></pre></p>
+</blockquote>
+<p>再开另一个终端，进入目录，输入</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">mitmproxy -k -s proxy.py</code></pre>
+
+<p>来开启 mitmproxy。</p>
+<blockquote>
+<p>若有公网连接需求，可以在运行参数中添加 <code>--set block_global=false</code></p>
+</blockquote>
+<p>如何连接服务器请同样参考上面的教程。</p>
+<h2 id="特殊需求"><a href="#特殊需求" class="headerlink" title="特殊需求"></a>特殊需求</h2><blockquote>
+<p>我想自己编译 grasscutter，可是 archlinuxarm 源里似乎没有合适的 gradle，怎么办？</p>
+</blockquote>
+<p>输入以下命令,全部选项默认。</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">pacman -U --overwrite <span class="token punctuation">\</span>* https://mirrors.ustc.edu.cn/archlinux/community/os/x86_64/gradle-7.4.2-1-any.pkg.tar.zst<span class="token punctuation">;</span>pacman -Rdd jdk-openjdk</code></pre>
+
+<p>输入 <code>gradle -v</code> 出现以下输出即成功。当然，不一定非要和下面的完全一样。</p>
+<pre class="language-none"><code class="language-none">------------------------------------------------------------
+Gradle 7.4.2
+------------------------------------------------------------
+
+Build time:   2022-03-31 16:40:07 UTC
+Revision:     &lt;unknown&gt;
+
+Groovy:       3.0.9
+Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
+JVM:          17.0.1 (Oracle Corporation 17.0.1+12-LTS-39)
+OS:           Linux 4.19.226-IllusionX+ aarch64</code></pre>
+</div></section><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>Telegram@feb_6th</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://chitang.tech/posts/grasscutter-android/" title="安卓部署 GrassCutter 简易教程">https://chitang.tech/posts/grasscutter-android/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/posts/hexo-vercel-blog/" rel="prev" title="使用 Hexo 与 Vercel 零成本打造你的个人博客"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">使用 Hexo 与 Vercel 零成本打造你的个人博客</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/posts/andOTP/" rel="next" title="andOTP - 开源, 多协议的手机验证器"><span class="post-nav-text">andOTP - 开源, 多协议的手机验证器</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"><style>.utterances {
+  max-width: 100%;
+}</style><script src="https://utteranc.es/client.js" repo="chitang233/chitang233" issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async></script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2022 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> Chi_Tang</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v6.0.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.5</span></div><div class="live-time"><span>本博客已运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2020-06-25T20:49:30');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = ` ${passDay} 天 ${passHour} 小时 ${passMinute} 分 ${passSecond} 秒`;
+}
+blog_live_time();
+</script></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" target="_blank" rel="noopener" href="https://www.google.com/search?q=site:chitang.tech" title="搜索"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:search-line"></span></span></a><script>function initMourn() {
+  const date = new Date();
+  const today = (date.getMonth() + 1) + "-" + date.getDate()
+  const mourn_days = ["4-4","9-18","12-13","7-7"]
+  if (mourn_days.includes(today)) {
+    document.documentElement.style.filter = "grayscale(1)";
+  }
+}
+initMourn();</script><script src="https://fastly.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script><script>const images = [...document.querySelectorAll('.markdown-body img')]
+mediumZoom(images)</script><style>.medium-zoom-image {
+  z-index: 99;
+}</style><script src="https://cdn.jsdelivr.net/npm/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>

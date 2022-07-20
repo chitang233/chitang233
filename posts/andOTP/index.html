@@ -1,0 +1,145 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="Chi_Tang"><meta name="copyright" content="Chi_Tang"><meta name="generator" content="Hexo 6.0.0"><meta name="theme" content="hexo-theme-yun"><title>andOTP - 开源, 多协议的手机验证器 | Chi_Tang's Blog</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="/css/JetBrains%20Mono.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/css/Noto%20Serif%20SC.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.3.3/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><link rel="icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="dns-prefetch" href="https://cos.yunyoujun.cn"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"chitang.tech","root":"/","title":"池塘的博客","version":"1.10.5","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"local_search":{"path":"/search.xml"},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false,"src":"/js/search/local-search.js"},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="alternate" href="/atom.xml" title="Chi_Tang's Blog" type="application/atom+xml"><link rel="stylesheet" href="/css/remixicon.css"><meta name="description" content="介绍 andOTP is a two-factor authentication App for Android 5.1+. It implements Time-based One-time Passwords (TOTP) and HMAC-Based One-Time Passwords (HOTP).Simply scan the QR code and login with the ge">
+<meta property="og:type" content="article">
+<meta property="og:title" content="andOTP - 开源, 多协议的手机验证器">
+<meta property="og:url" content="https://chitang.tech/posts/andOTP/index.html">
+<meta property="og:site_name" content="Chi_Tang&#39;s Blog">
+<meta property="og:description" content="介绍 andOTP is a two-factor authentication App for Android 5.1+. It implements Time-based One-time Passwords (TOTP) and HMAC-Based One-Time Passwords (HOTP).Simply scan the QR code and login with the ge">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://chitang.tech/images/andOTP/Cloudflare1.jpg">
+<meta property="og:image" content="https://chitang.tech/images/andOTP/Cloudflare2.jpg">
+<meta property="og:image" content="https://chitang.tech/images/andOTP/Steam1.jpg">
+<meta property="og:image" content="https://chitang.tech/images/andOTP/Steam2.jpg">
+<meta property="article:published_time" content="2022-04-16T05:38:50.000Z">
+<meta property="article:modified_time" content="2022-07-20T08:15:36.706Z">
+<meta property="article:author" content="Chi_Tang">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="Open Source">
+<meta property="article:tag" content="Softwares">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://chitang.tech/images/andOTP/Cloudflare1.jpg"><script>(function() {
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><canvas id="trianglifyContainer"></canvas><script defer src="https://fastly.jsdelivr.net/npm/trianglify@4/dist/trianglify.bundle.js"></script><script>document.addEventListener("DOMContentLoaded", () => {
+  const pattern = trianglify({
+    width: 800,
+    height: 600,
+    cellSize: 75,
+    palette: ["YlGnBu", "GnBu", "Purples", "Blues"],
+  });
+  const canvasOpts = {
+    applyCssScaling: false
+  }
+  document.body.appendChild(pattern.toCanvas(trianglifyContainer, canvasOpts));
+});</script><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="Chi_Tang"><img width="96" loading="lazy" src="/images/avatar.webp" alt="Chi_Tang"></a><div class="site-author-name"><a href="/about/">Chi_Tang</a></div><a class="site-name" href="/about/site.html">Chi_Tang's Blog</a><sub class="site-subtitle">池塘的博客</sub><div class="site-description">只是一个普通的初中生罢了</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">6</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">11</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">11</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:settings-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><span class="icon iconify" data-icon="ri:rss-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/chitang233" title="GitHub" target="_blank" style="color:#181717"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:chitang233@proton.me" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/113980518" title="bilibili" target="_blank" style="color:#FF8EB3"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/chitang233" title="Telegram" target="_blank" style="color:#0088CC"><span class="icon iconify" data-icon="ri:telegram-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/chitangchannel" title="Telegram Channel" target="_blank" style="color:#0088CC"><span class="icon iconify" data-icon="ri:telegram-fill"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="友链" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0"><span class="toc-number">3.</span> <span class="toc-text">添加</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#TOTP-HOTP-%E4%BB%A5%E5%8F%8A-MOTP"><span class="toc-number">3.1.</span> <span class="toc-text">TOTP, HOTP 以及 MOTP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Steam"><span class="toc-number">3.2.</span> <span class="toc-text">Steam</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90%E7%9A%84%E8%AE%BE%E7%BD%AE%E9%A1%B9"><span class="toc-number">4.</span> <span class="toc-text">推荐的设置项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E9%AA%8C%E8%AF%81"><span class="toc-number">4.1.</span> <span class="toc-text">设备验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8A%A0%E5%AF%86"><span class="toc-number">4.2.</span> <span class="toc-text">数据库加密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E5%87%BB-amp-%E5%8F%8C%E5%87%BB"><span class="toc-number">4.3.</span> <span class="toc-text">单击 &amp; 双击</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%81%E8%AE%B8%E6%88%AA%E5%9B%BE"><span class="toc-number">4.4.</span> <span class="toc-text">允许截图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD"><span class="toc-number">5.</span> <span class="toc-text">备份</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://chitang.tech/posts/andOTP/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Chi_Tang"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Chi_Tang's Blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">andOTP - 开源, 多协议的手机验证器<a class="post-edit-link" href="https://github.com/chitang233/chitang233/tree/hexo/source/_posts/andOTP.md" target="_blank" title="编辑" rel="noopener"><span class="icon iconify" data-icon="ri:edit-line"></span></a></h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="创建时间：2022-04-16 13:38:50" itemprop="dateCreated datePublished" datetime="2022-04-16T13:38:50+08:00">2022-04-16</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-2-line"></span></span> <time title="修改时间：2022-07-20 16:15:36" itemprop="dateModified" datetime="2022-07-20T16:15:36+08:00">2022-07-20</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><span class="icon iconify" data-icon="ri:file-word-line"></span></span> <span title="本文字数">967</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><span class="icon iconify" data-icon="ri:timer-line"></span></span> <span title="阅读时长">3m</span></span></span><div class="post-classify"><span class="post-tag"><a class="tag-item" href="/tags/Android/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">Android</span></a><a class="tag-item" href="/tags/Open-Source/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">Open Source</span></a><a class="tag-item" href="/tags/Softwares/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">Softwares</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><blockquote>
+<p>andOTP is a two-factor authentication App for Android 5.1+.</p>
+<p>It implements Time-based One-time Passwords (TOTP) and HMAC-Based One-Time Passwords (HOTP).<br>Simply scan the QR code and login with the generated 6-digit code.</p>
+</blockquote>
+<p>andOTP 使用 MIT 协议开源，代码托管在 <a target="_blank" rel="noopener" href="https://github.com/andOTP/andOTP">GitHub</a> 上</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>andOTP 是一个开源软件，可以前往 <a target="_blank" rel="noopener" href="https://github.com/andOTP/andOTP/releases">GitHub Releases</a> 下载，官方也上架了 <a target="_blank" rel="noopener" href="https://f-droid.org/packages/org.shadowice.flocke.andotp/">F-Droid</a> 和 <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=org.shadowice.flocke.andotp">Google Play</a> (我个人推荐 F-Droid)。</p>
+<h2 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h2><h3 id="TOTP-HOTP-以及-MOTP"><a href="#TOTP-HOTP-以及-MOTP" class="headerlink" title="TOTP, HOTP 以及 MOTP"></a>TOTP, HOTP 以及 MOTP</h3><p>在主界面右下角的加号中提供了三种添加方式</p>
+<p>大部分网站会提供一个二维码供扫描，根据需要选择 扫描二维码 和 相册中选择二维码 就好</p>
+<p>如果只有提供密钥的话就需要选择 输入详细信息 了</p>
+<p>类型选择对应的</p>
+<p>签发方及名称可随意，比如我的 Cloudflare 这样填写</p>
+<p><img src="/images/andOTP/Cloudflare1.jpg" alt="Cloudflare 详细信息" loading="lazy"></p>
+<p>在主界面看起来会像这样</p>
+<p><img src="/images/andOTP/Cloudflare2.jpg" alt="Cloudflare Home" loading="lazy"></p>
+<p>密钥就填网站给的</p>
+<p>标签可自己设置，便于区分</p>
+<p>高级选项中有周期, 数字, 算法</p>
+<p>算法很好理解，周期是指验证码的刷新时间，数字是验证码的位数</p>
+<p>如果没有需要最好不要动</p>
+<h3 id="Steam"><a href="#Steam" class="headerlink" title="Steam"></a>Steam</h3><p>Steam 验证器比较特殊，只能通过手动输入信息来填写</p>
+<p>密钥获取方式也比较特殊</p>
+<p>而且手机需要经过 root</p>
+<p>使用任何能够访问 <code>/data</code> 目录的工具找到这个文件</p>
+<pre class="language-none"><code class="language-none">&#x2F;data&#x2F;data&#x2F;com.valvesoftware.android.steam.community&#x2F;files&#x2F;Steamguard-&lt;STEAMID&gt;</code></pre>
+
+<p>使用任何能够访问它的工具打开，在文件里面能够找到这样一部分</p>
+<pre class="language-none"><code class="language-none">&quot;uri&quot;:&quot;otpauth:\&#x2F;\&#x2F;totp\&#x2F;Steam:USERNAME?secret&#x3D;################################&amp;issuer&#x3D;Steam&quot;</code></pre>
+
+<p>在 <code>secret=</code> 后面<code>&amp;issuer</code> 前面的就是我们所需要的密钥了，将它保存好，然后回到 andOTP</p>
+<p>在右下角的添加中选择 输入详细信息</p>
+<p>类型选择 <code>STEAM</code></p>
+<p>签发方和名称随意</p>
+<p>密钥就填写刚刚获取到的</p>
+<p>标签随意</p>
+<p>高级选项不要动<del>你也动不了</del></p>
+<p>推荐这样填写</p>
+<p><img src="/images/andOTP/Steam1.jpg" alt="Steam 详细信息" loading="lazy"></p>
+<p>在主页就可以正常显示验证码了</p>
+<p><img src="/images/andOTP/Steam2.jpg" alt="Steam Home" loading="lazy"></p>
+<h2 id="推荐的设置项"><a href="#推荐的设置项" class="headerlink" title="推荐的设置项"></a>推荐的设置项</h2><p>andOTP 的设置在右上角的更多菜单中，这一部分会讲一下我个人比较推荐的设置项目</p>
+<h3 id="设备验证"><a href="#设备验证" class="headerlink" title="设备验证"></a>设备验证</h3><p>可以选择 无, 密码, PIN, 设备凭据</p>
+<p>前三个都非常好理解，是在 andOTP 单独设置的验证方法</p>
+<p>设备凭据是你设备本身的登录方式</p>
+<p>选择这个可以调用 Android 系统的密码，也可以通过指纹验证(如果有)</p>
+<h3 id="数据库加密"><a href="#数据库加密" class="headerlink" title="数据库加密"></a>数据库加密</h3><p>可以选择 Android 密钥库 或 密码&#x2F;PIN</p>
+<p>如果想要使用设备凭据验证则只能选择 Android 密钥库，没什么好说的</p>
+<p>但是需要注意的一点是</p>
+<p>如果选择 Android 密钥库，SwiftBackup, 手机自带备份, adb backup 都无法备份 andOTP 内的密钥数据（别问我怎么知道的）</p>
+<p><strong>Android 密钥库 用户一定要记得备份</strong></p>
+<h3 id="单击-amp-双击"><a href="#单击-amp-双击" class="headerlink" title="单击 &amp; 双击"></a>单击 &amp; 双击</h3><p>用来设置单击&#x2F;双击条目时进行的操作</p>
+<p>我个人习惯将 单击 设置为 显示&#x2F;隐藏</p>
+<p>双击 设置为 复制</p>
+<h3 id="允许截图"><a href="#允许截图" class="headerlink" title="允许截图"></a>允许截图</h3><p>在关于页面中点击点击八次 “版本”，在弹出的对话框中点击 确定</p>
+<p>回到设置就能在最下方看到 启用屏幕截图 的选项了</p>
+<p>打开后就可以用其他应用在 andOTP 中进行屏幕录制或截图了</p>
+<h2 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h2><p>在更多菜单中点击 备份</p>
+<p>备份类型可以根据自己的需要来选择，推荐选择已加密</p>
+<p>然后点击 创建备份</p>
+<p>如果选择已加密，在弹出的窗口中为备份文件设置密码</p>
+<p>如果需要恢复备份，在下面点击 还原备份</p>
+<p>选择之前的备份文件，如果有密码的话输入密码就可以还原了</p>
+</div></section><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="打赏" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><span class="icon iconify" data-icon="ri:hand-coin-line"></span></span><div id="reward-comment">给点饭钱</div><div id="qr" style="display:none;"><div style="display:inline-block"><a href="/images/QRCodes/afdian.png"><img loading="lazy" src="/images/QRCodes/afdian.png" alt="爱发电" title="爱发电"></a><div><span style="color:#7b5bc3"><svg class="icon" aria-hidden="true"><use xlink:href="#/icon/afdian.png"></use></svg></span></div></div><div style="display:inline-block"><a href="/images/QRCodes/trx.png"><img loading="lazy" src="/images/QRCodes/trx.png" alt="TRON-TRX20" title="TRON-TRX20"></a><div><span style="color:#b73e31"><svg class="icon" aria-hidden="true"><use xlink:href="#/icon/tron.png"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>Chi_Tang</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="https://chitang.tech/posts/andOTP/" title="andOTP - 开源, 多协议的手机验证器">https://chitang.tech/posts/andOTP/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均默认采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-SA 4.0 "><span class="icon iconify" data-icon="ri:creative-commons-line"></span><span class="icon iconify" data-icon="ri:creative-commons-by-line"></span><span class="icon iconify" data-icon="ri:creative-commons-sa-line"></span></a> 许可协议。</li></ul></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/posts/grasscutter-android/" rel="prev" title="安卓部署 GrassCutter 简易教程"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">安卓部署 GrassCutter 简易教程</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/posts/arch-guide/" rel="next" title="Arch Linux 折腾指南"><span class="post-nav-text">Arch Linux 折腾指南</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"><style>.utterances {
+  max-width: 100%;
+}</style><script src="https://utteranc.es/client.js" repo="chitang233/chitang233" issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async></script></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2020 – 2022 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> Chi_Tang</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v6.0.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.5</span></div><div class="live-time"><span>本博客已运行</span><span id="display_live_time"></span><span class="moe-text">(●'◡'●)</span><script>function blog_live_time() {
+  setTimeout(blog_live_time, 1000);
+  const start = new Date('2020-06-25T20:49:30');
+  const now = new Date();
+  const timeDiff = (now.getTime() - start.getTime());
+  const msPerMinute = 60 * 1000;
+  const msPerHour = 60 * msPerMinute;
+  const msPerDay = 24 * msPerHour;
+  const passDay = Math.floor(timeDiff / msPerDay);
+  const passHour = Math.floor((timeDiff % msPerDay) / 60 / 60 / 1000);
+  const passMinute = Math.floor((timeDiff % msPerHour) / 60 / 1000);
+  const passSecond = Math.floor((timeDiff % msPerMinute) / 1000);
+  display_live_time.innerHTML = ` ${passDay} 天 ${passHour} 小时 ${passMinute} 分 ${passSecond} 秒`;
+}
+blog_live_time();
+</script></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" target="_blank" rel="noopener" href="https://www.google.com/search?q=site:chitang.tech" title="搜索"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:search-line"></span></span></a><script>function initMourn() {
+  const date = new Date();
+  const today = (date.getMonth() + 1) + "-" + date.getDate()
+  const mourn_days = ["4-4","9-18","12-13","7-7"]
+  if (mourn_days.includes(today)) {
+    document.documentElement.style.filter = "grayscale(1)";
+  }
+}
+initMourn();</script><script src="https://fastly.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script><script>const images = [...document.querySelectorAll('.markdown-body img')]
+mediumZoom(images)</script><style>.medium-zoom-image {
+  z-index: 99;
+}</style><script src="https://cdn.jsdelivr.net/npm/live2d-widget@^3.1.3/lib/L2Dwidget.min.js"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body></html>
