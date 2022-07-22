@@ -2,6 +2,10 @@
 
 —— A 14-year-old student from Shandong, China.
 
+[SSH Public Key](https://gist.githubusercontent.com/chitang233/741d438a469cb8c74a6aed6e6e9b3ff1/raw/2f2b0470511fe08f07fe8c99a6853ae98910652d/SSH%2520Public%2520Key)
+
+[GPG Public Key](https://gist.githubusercontent.com/chitang233/0f0cfd75c6d52ab8763f5ab7836f6e31/raw/e21ab3dfc50e86500171f7a531bd3a07316c19f7/GPG%2520Public%2520Key)
+
 ---
 
 #### ℹ️ Status
