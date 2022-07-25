@@ -30,7 +30,7 @@ links:
     color: "#2db0cb" 
     email: mifen2017@qq.com   #非必须
 
-  - url: https://kiteab.github.io
+  - url: https://blog.kiteab.me
     avatar: https://q1.qlogo.cn/g?b=qq&nk=251877082&s=640
     name: KiteAB
     blog: KiteAB’s Blog
