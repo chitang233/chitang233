@@ -71,10 +71,10 @@ MDX                6 mins          ▓░░░░░░░░░░░░░░
 
 #### 🕹 Games
 
-[![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/chitang233)
+[![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/id/chitang233)
 [![Minecraft](https://img.shields.io/badge/chitang-green?style=for-the-badge&logo=Minecraft&logoColor=white)](https://namemc.com/profile/chitang.2)
 
-![Genshin Impact information](https://genshin-card.getloli.com/rand/83264638.png)
+![Genshin Impact Information](https://genshin-card.getloli.com/rand/83264638.png)
 
 ---
 
