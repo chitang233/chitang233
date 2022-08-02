@@ -75,10 +75,10 @@ social:
   #   link: https://www.zhihu.com/people/chi-tang-jun-23
   #   icon: ri:zhihu-line
   #   color: "#0084FF"
-  - name: bilibili
-    link: https://space.bilibili.com/113980518
-    icon: ri:bilibili-line
-    color: "#FF8EB3"
+  # - name: bilibili
+  #   link: https://space.bilibili.com/113980518
+  #   icon: ri:bilibili-line
+  #   color: "#FF8EB3"
   - name: Telegram
     link: https://t.me/chitang233
     icon: ri:telegram-line
