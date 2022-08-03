@@ -347,12 +347,12 @@ local_search:
   src: /js/search/local-search.js
 
 busuanzi:
-  enable: false
-  site_uv: false
+  enable: true
+  site_uv: true
   site_uv_icon: ri:user-line
-  site_pv: false
+  site_pv: true
   site_pv_icon: ri:eye-line
-  page_pv: false
+  page_pv: true
   page_pv_icon: ri:eye-line
 
 wordcount:
