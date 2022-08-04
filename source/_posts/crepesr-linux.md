@@ -41,7 +41,7 @@ sudo pacman -S nodejs-lts-gallium npm --needed --noconfirm
 #### Debian
 
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
