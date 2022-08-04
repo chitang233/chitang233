@@ -156,7 +156,7 @@ mitmproxy --version
 
 如果输出类似以下的版本号而不出现报错则为环境配置完成
 
-![依赖](/images/creepesr-linux/dep.png)
+![依赖](/images/crepesr-linux/dep.png)
 
 ## 安装 CrepeSR
 
