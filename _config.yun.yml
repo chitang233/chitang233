@@ -274,10 +274,6 @@ reward:
        path: /images/QRCodes/afdian.png
        color: "#7b5bc3"
        icon: /icon/afdian.png
-     - name: TRON-TRX20
-       path: /images/QRCodes/trx.png
-       color: "#b73e31"
-       icon: /icon/tron.png
 #    - name: 支付宝
 #      path: /images/QRCodes/alipay.png
 #      color: "#00A3EE"
