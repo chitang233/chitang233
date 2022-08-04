@@ -4,6 +4,8 @@ date: 2022-08-04 17:40:21
 tags: [CrepeSR, 星穹铁道, Linux, 私服, Guide]
 ---
 
+在 Linux 上搭建 CrepeSR(崩坏：星穹铁道 社区服务器)
+
 <div class="warning">
 
 > 本文仅适用于基于 Arch Linux 和 Debian 的发行版(当然，如果你有其他发行版的安装方式也欢迎 PR)，Windows 服务器的搭建可参考 [CrepeSR 官方 Wiki](https://github.com/Crepe-Inc/CrepeSR/wiki/%E4%B8%AD%E6%96%87%E7%89%88%E6%95%99%E7%A8%8B) 或 [TomyJan 的教程](https://blog.tomys.top/2022-08/starrailtj/)
