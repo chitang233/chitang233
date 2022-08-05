@@ -21,35 +21,35 @@ tags: [CrepeSR, 星穹铁道, Linux, 私服, Guide]
 ### Git
 #### Arch Linux
 ```shell
-# pacman -S git --needed
+sudo pacman -S git --needed
 ```
 
 #### Debian
 ```shell
-# apt install git
+sudo apt install git
 ```
 
 ### Node.js
 #### Arch Linux
 ```shell
-# pacman -S nodejs-lts-gallium --needed
+sudo pacman -S nodejs-lts-gallium --needed
 ```
 
 #### Debian
 ```shell
-$ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-# apt install nodejs
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install nodejs
 ```
 
 ### npm
 #### Arch Linux
 ```shell
-# pacman -S npm --needed
+sudo pacman -S npm --needed
 ```
 
 #### Debian
 ```shell
-# apt install npm
+sudo apt install npm
 ```
 
 ### MongoDB
@@ -69,16 +69,16 @@ makepkg -si
 然后, 使用 paru 安装 MongoDB
 
 ```shell
-$ paru -S mongodb-bin --needed
-# systemctl enable --now mongodb
+paru -S mongodb-bin --needed
+sudo systemctl enable --now mongodb
 ```
 
 #### Ubuntu
 首先, 导入 MongoDB 的 PGP 公钥
 
 ```shell
-# apt install gnupg
-$ wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | apt-key add -
+sudo apt install gnupg
+wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | apt-key add -
 ```
 
 然后, 根据你的系统版本选择对应的命令执行
@@ -101,9 +101,9 @@ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongod
 最后, 更新软件源并安装
 
 ```shell
-# apt update
-# apt install mongodb-org
-# systemctl enable --now mongod
+sudo apt update
+sudo apt install mongodb-org
+sudo systemctl enable --now mongod
 ```
 
 #### Debian
@@ -115,34 +115,34 @@ sudo systemctl enable --now mongod
 ### Python
 #### Arch Linux
 ```shell
-# pacman -S python --needed
+sudo pacman -S python --needed
 ```
 
 #### Debian
 ```shell
-# apt install python3
+sudo apt install python3
 ```
 
 ### mitmproxy
 #### Arch Linux
 ```shell
-# pacman -S mitmproxy --needed
+sudo pacman -S mitmproxy --needed
 ```
 
 #### Debian
 ```shell
-# apt install mitmproxy
+sudo apt install mitmproxy
 ```
 
 ### libcap
 #### Arch Linux
 ```shell
-# pacman -S libcap
+sudo pacman -S libcap
 ```
 
 #### Debian
 ```shell
-# apt install libcap2-bin
+sudo apt install libcap2-bin
 ```
 
 ### 检查安装
@@ -187,7 +187,7 @@ npm install
 使 node 允许绑定 80 与 443 端口
 
 ```shell
-# setcap cap_net_bind_service=+eip `readlink -f \`which node\``
+sudo setcap cap_net_bind_service=+eip `readlink -f \`which node\``
 ```
 
 ## 运行服务端
