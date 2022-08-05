@@ -643,11 +643,7 @@ zmodule https://[host]/[author]/[module name].git # 模块在其他 Git 仓库�
 #### Intel 显卡
 
 ```bash
-sudo pacman -S xf86-video-intel # 驱动本体
-sudo pacman -S mesa # OpenGL 支持
-sudo pacman -S lib32-mesa # 32 位 OpenGL 支持
-sudo pacman -S vulkan-intel # Vulkan 支持
-paru -S intel-opencl  # OpenCL 支持
+sudo pacman -S --needed lib32-mesa vulkan-intel lib32-vulkan-intel vulkan-icd-loader lib32-vulkan-icd-loader intel-media-driver libvdpau-va-gl
 ```
 
 #### NVIDIA 显卡
