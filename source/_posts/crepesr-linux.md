@@ -274,7 +274,7 @@ avatar add 1001     # 给指定的玩家三月七
 </details>
 
 ### 地图和场景
-在 `CrepeSR/src/data/excel` 中的 `MapEntryExcelTable.json` 里可以找到能用来改编场景的 `planeID` 与 `floorID`
+在 `CrepeSR/src/data/excel` 中的 `MapEntryExcelTable.json` 里可以找到能用来改变场景的 `planeID` 与 `floorID`
 
 在 `CrepeSR/src/server/packets` 中的 `GetCurSceneInfoCsReq.ts` 里编辑 `planeId` 与 `floorId` 来改变场景
 
