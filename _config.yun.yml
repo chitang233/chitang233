@@ -19,14 +19,14 @@ google_analytics:
 
 head:
   css:
-    remix-icon: /css/remixicon.css
+    remix-icon: https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/css/remixicon.css
 
 font:
   cdn:
     enable: true
     lib:
-      - /css/JetBrains%20Mono.css
-      - /css/Noto%20Serif%20SC.css
+      - https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/css/JetBrains%20Mono.css
+      - https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/css/Noto%20Serif%20SC.css
   serif:
     family: '''Noto Serif CJK SC'', ''Noto Serif'', ''Noto Serif SC'', ''宋体'', ''SimSun'', serif'
   sans_serif:
@@ -47,6 +47,7 @@ prefetch:
 
 dns_prefetch:
   - https://cos.yunyoujun.cn
+  - https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com
 
 # do more(TCP handshake...) than dns-fetch
 preconnect:
@@ -133,7 +134,7 @@ engine_search:
 
 search:
   modal: true
-  bg_image: /images/bg/stars-timing-2.jpg
+  bg_image: https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/bg/stars-timing-2.jpg
   # dark_bg_image: xxx
   # placeholder:
 
@@ -160,12 +161,12 @@ scrollreveal:
 
 cursor:
   enable: true
-  default: /css/md-cursors/pointer.cur
-  pointer: /css/md-cursors/link.cur
-  text: /css/md-cursors/text.cur
+  default: https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/css/md-cursors/pointer.cur
+  pointer: https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/css/md-cursors/link.cur
+  text: https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/css/md-cursors/text.cur
 
 sidebar:
-  bg_image: /images/bg/stars-timing-1.jpg
+  bg_image: https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/bg/stars-timing-1.jpg
   bg_position: bottom 3rem center
   tagcloud:
     enable: false

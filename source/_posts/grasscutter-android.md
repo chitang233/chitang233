@@ -133,7 +133,7 @@ sudo java -jar <grasscutter.jar>
 
 > 主文件名因人而异，按需修改。
 > 例如现在我的文件结构是这样
-> ![floder-content](images/grasscutter-android/files.png)
+> ![floder-content](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/grasscutter-android/files.png)
 > 主文件名是 `grasscutterZH-dev-775f4cb.jar`
 > 则应该运行:
 >   ```bash

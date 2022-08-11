@@ -156,7 +156,7 @@ mitmproxy --version
 
 如果输出类似下图的版本号而不出现报错则为环境配置完成
 
-![依赖](/images/crepesr-linux/dep.png)
+![依赖](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/crepesr-linux/dep.png)
 
 ## 安装 CrepeSR
 ### 拉取项目和资源
@@ -167,7 +167,7 @@ git clone https://github.com/memetrollsXD/CrepeSR-Resources CrepeSR/src/data --d
 
 在完成后, `CrepeSR` 文件夹内的文件结构应与下图基本一致
 
-![文件结构](images/crepesr-linux/crepesr-files.png)
+![文件结构](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/crepesr-linux/crepesr-files.png)
 
 ### 安装依赖
 <div class="warning">
@@ -181,7 +181,7 @@ cd CrepeSR
 npm install
 ```
 
-![完成](images/crepesr-linux/npm-install.png)
+![完成](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/crepesr-linux/npm-install.png)
 
 ### 端口设置
 使 node 允许绑定 80 与 443 端口

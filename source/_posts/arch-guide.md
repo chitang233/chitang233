@@ -33,7 +33,7 @@ Arch Linux 有许多镜像源，你可以在[官方的下载链接](https://arch
 
 在中国大陆，我推荐[北京外国语大学开源软件镜像站](https://mirrors.bfsu.edu.cn/)，在右侧的 “获取下载链接” 处即可找到 Arch Linux 的最新 ISO 文件
 
-![bfsu](/images/arch-guide/bfsu.png)
+![bfsu](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/arch-guide/bfsu.png)
 
 ## 刻录
 
@@ -57,7 +57,7 @@ dd if=/path/to/archlinux-*.iso of=/dev/sdX status=progress
 
 将 `/dev/sdX` 替换为你的 U 盘设备名
 
-![Linux DD](/images/arch-guide/linux-dd.png)
+![Linux DD](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/arch-guide/linux-dd.png)
 
 ### Windows Rufus
 
@@ -843,4 +843,4 @@ rm -rf yay
 | LibreOffice | `libreoffice-fresh`           |
 | WPS Office  | `wps-office-cn`<sup>AUR</sup> |
 
-![又摸了一天好累哦](/images/stickers/touch-fish.jpg)_**Working in progress...**_
+![又摸了一天好累哦](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/stickers/touch-fish.jpg)_**Working in progress...**_
