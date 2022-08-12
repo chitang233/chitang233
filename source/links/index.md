@@ -79,6 +79,20 @@ links:
 		blog: SugerMGP's Blog
 		color: "#66ccff"
 
+  - url: https://blog.dianas.cyou
+    avatar: https://blog.dianas.cyou/img/favicon.png
+    name: Jasmine
+    blog: Jasmine Blog
+    color: "pink"
+    desc: 写点文字
+
+  - url: https://blog.cyznb.eu.org/
+    avatar: https://www.cyznb.eu.org/imgs/head1x2.png
+    name: BLxcwg666
+    blog: BLxcwg666 's Blog
+    color: "66ccff"
+    desc: BLxcwg666/小陈网管 的博客
+
 placeholder: 没有说明 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
 
