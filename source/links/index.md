@@ -93,6 +93,19 @@ links:
     color: "#66ccff"
     desc: BLxcwg666/小陈网管 的博客
 
+  - url: https://march7th.tk
+    avatar: https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/Fmarch7th/avatar.jpg 
+    name: 三月七
+    blog: 三月七的网站
+    color: "pink"
+    email: i@march7th.tk
+
+  - url: https://milena-blog.vercel.app
+    avatar: https://milena-blog.vercel.app/images/logo.png
+    name: 一穗灯花
+    blog: 灯花小屋
+    color: "pink"
+
 placeholder: 没有说明 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
 
