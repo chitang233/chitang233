@@ -73,11 +73,11 @@ links:
     name: 一刀斩の小窝
     blog: 一刀斩の小窝
 
-	- url: https://sugarmgp.github.io/
-		avatar: https://sugarmgp.github.io/images/avatar.png
-		name: 白糖洒一地
-		blog: SugerMGP's Blog
-		color: "#66ccff"
+  - url: https://sugarmgp.github.io/
+    avatar: https://sugarmgp.github.io/images/avatar.png
+    name: 白糖洒一地
+    blog: SugerMGP's Blog
+    color: "#66ccff"
 
   - url: https://blog.dianas.cyou
     avatar: https://blog.dianas.cyou/img/favicon.png
@@ -90,7 +90,7 @@ links:
     avatar: https://www.cyznb.eu.org/imgs/head1x2.png
     name: BLxcwg666
     blog: BLxcwg666 's Blog
-    color: "66ccff"
+    color: "#66ccff"
     desc: BLxcwg666/小陈网管 的博客
 
 placeholder: 没有说明 # 默认对友链的描述
