@@ -22,7 +22,7 @@ links:
     color: "#000000"
     email: kiteabpl@outlook.com
 
-  - url: https://ssmzhn.github.io
+  - url: https://ssmzhn.vercel.app
     avatar: http://q1.qlogo.cn/g?b=qq&nk=3285956207&s=640
     name: 设啥名字好呢
     blog: 臭 烘 烘 的 撤 硕
