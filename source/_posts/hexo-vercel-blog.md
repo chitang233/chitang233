@@ -108,7 +108,7 @@ hexo server
 
 没有意外的话，使用浏览器打开 http://localhost:4000 就能够看到 Hexo 的默认首页了
 
-![Hexo 默认首页](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/hexo-default.png)
+![Hexo 默认首页](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/hexo-default.png)
 
 以及，这里有一些常用的 Hexo 命令
 
@@ -228,7 +228,7 @@ gh repo create
 
 在 https://vercel.com/account/login-connections 连接你的 GitHub 账户后，前往 https://vercel.com/new 导入你的 Hexo 仓库
 
-![添加项目](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/vercel-add.png)
+![添加项目](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/vercel-add.png)
 
 如果没有正确识别出框架的话，在 **FRAMEWORK PRESENT** 中手动选择 **Hexo**
 
@@ -242,7 +242,7 @@ gh repo create
 
 #### Vercel
 
-![.vercel.app 域名](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/vercel-app-domain.png)
+![.vercel.app 域名](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/vercel-app-domain.png)
 
 在 Vercel 项目设置中可以自行添加 `.vercel.app` 结尾的免费二级域名
 
@@ -270,25 +270,25 @@ gh repo create
 
 在仪表盘中点击**添加站点**
 
-![添加站点](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/cf-add-website.png)
+![添加站点](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/cf-add-website.png)
 
 在里面输入你注册的域名，如果出现 `your.domain is not a registered domain` 的提示建议等待半小时左右再试
 
 计划选择 Free 足够
 
-![计划选择](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/cf-plan.png)
+![计划选择](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/cf-plan.png)
 
 在下一页的 DNS 记录中，可能会有注册商自带的一些记录，我的推荐是全部删除
 
-![DNS 记录](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/cf-dns.jpg)
+![DNS 记录](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/cf-dns.jpg)
 
 弹出的警告直接确认
 
-![警告](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/cf-warn.png)
+![警告](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/cf-warn.png)
 
 在下一页会要求将域名的名称服务器(即 Nameserver)更改为 Cloudflare 提供给你个人的服务器
 
-![Nameserver](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/cf-nameserver.png)
+![Nameserver](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/cf-nameserver.png)
 
 这步操作因注册商而异，也请自行搜索
 
@@ -298,7 +298,7 @@ gh repo create
 
 需要注意的是，如果直接使用顶级域名，Vercel 会询问你 www 的处理方式，我个人推荐将 www 跳转到根域(即第二个选项)
 
-![顶级域名](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/vercel-domain.png)
+![顶级域名](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/vercel-domain.png)
 
 然后，前往 [Cloudflare 仪表盘](https://dash.cloudflare.com)，选择你的域名，进入左侧的 **DNS** 页面
 
@@ -316,7 +316,7 @@ gh repo create
 
 在添加完成后，它应该会像是这样
 
-![DNS 记录](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/hexo-vercel-blog/cf-dns-record.png)
+![DNS 记录](https://chitangcos.zyglq.cn/images/hexo-vercel-blog/cf-dns-record.png)
 
 如果配置没问题的话，回到 Vercel 项目设置中就能够看到 Valid Configuration 了
 
