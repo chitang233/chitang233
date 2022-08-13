@@ -94,7 +94,7 @@ links:
     desc: BLxcwg666/小陈网管 的博客
 
   - url: https://march7th.tk
-    avatar: https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/Fmarch7th/avatar.jpg 
+    avatar: https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/march7th/avatar.jpg 
     name: 三月七
     blog: 三月七的网站
     color: "pink"
