@@ -14,14 +14,6 @@ links:
     color: "#0000FF"
     email: liziqian99@qq.com
 
-  - url: https://win10memz.github.io
-    avatar: https://s1.ax1x.com/2020/06/27/N6dm5R.jpg
-    name: win10memz
-    blog: Win10Memz の Blog
-    desc: 一位初中生做的淹没在茫茫互联网海洋中的简单博客罢了
-    color: "#2db0cb" 
-    email: mifen2017@qq.com   #非必须
-
   - url: https://blog.kiteab.me
     avatar: https://q1.qlogo.cn/g?b=qq&nk=251877082&s=640
     name: KiteAB
