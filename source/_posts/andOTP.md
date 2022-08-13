@@ -35,11 +35,11 @@ andOTP 是一个开源软件，可以前往 [GitHub Releases](https://github.com
 
 签发方及名称可随意，比如我的 Cloudflare 这样填写
 
-![Cloudflare 详细信息](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/andOTP/Cloudflare1.jpg)
+![Cloudflare 详细信息](https://chitangcos.zyglq.cn/images/andOTP/Cloudflare1.jpg)
 
 在主界面看起来会像这样
 
-![Cloudflare Home](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/andOTP/Cloudflare2.jpg)
+![Cloudflare Home](https://chitangcos.zyglq.cn/images/andOTP/Cloudflare2.jpg)
 
 密钥就填网站给的
 
@@ -87,11 +87,11 @@ Steam 验证器比较特殊，只能通过手动输入信息来填写
 
 推荐这样填写
 
-![Steam 详细信息](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/andOTP/Steam1.jpg)
+![Steam 详细信息](https://chitangcos.zyglq.cn/images/andOTP/Steam1.jpg)
 
 在主页就可以正常显示验证码了
 
-![Steam Home](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/andOTP/Steam2.jpg)
+![Steam Home](https://chitangcos.zyglq.cn/images/andOTP/Steam2.jpg)
 
 ## 推荐的设置项
 
