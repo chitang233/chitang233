@@ -6,16 +6,8 @@ keywords: 链接
 description: 池塘的小伙伴们
 comments: true
 links:
-  - url: https://edenjohnson.cyou/ 
-    avatar: https://pic.edenjohnson.cyou/images/20200625174516.png
-    name: Eden
-    blog: Eden 瞎写小屋
-    desc: 去探索去发现
-    color: "#60a037"
-    email: me@edenjohnson.me
- 
   - url: https://liziqian.net/
-    avatar: https://liziqian.net/images/myface.jpg
+    avatar: https://i2.hdslb.com/bfs/face/9c0d4f03471e6d8c195e4d9e87b247459612af7c.jpg
     name: 李梓迁
     blog: 李梓迁的个人网站
     desc: 一个不知道有啥用的网站
@@ -45,14 +37,6 @@ links:
     desc: #Nothing
     email: ssmzhn-bilibili@outlook.com
 
-  - url: https://blog.233.pink
-    avatar: https://fastly.jsdelivr.net/gh/ilyfairy/cdn@1.1.1/img/custom/avatar.png
-    name: ilyfairy
-    blog: ilyfairy's Blog
-    desc: 一只可爱的小仙女
-    email: me@ilyfairy.com
-    color: "#dbadaf"
-
   - url: https://blog.archlinux.tech
     avatar: https://q1.qlogo.cn/g?b=qq&nk=3272912942&s=640
     name: purofle的blog
@@ -68,9 +52,9 @@ links:
     desc: 14岁，事初中生
     color: "#39c5bb"
 
-  - url: https://blog.yigaozhan.ga
+  - url: https://blog.yidaozhan.top
     avatar: https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640
-    name: 一刀斩の小窝
+    name: 一刀斩
     blog: 一刀斩の小窝
 
   - url: https://sugarmgp.github.io/
