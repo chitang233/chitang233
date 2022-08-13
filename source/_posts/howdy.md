@@ -126,7 +126,7 @@ sudo howdy -U <username> add
 
 用于标记面部
 
-![面部录入](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/howdy/face-add.png)
+![面部录入](https://chitangcos.zyglq.cn/images/howdy/face-add.png)
 
 #### Howdy 用法
 
@@ -156,11 +156,11 @@ sudo howdy -U <username> add
 auth	sufficient	pam_python.so	/lib/security/howdy/pam.py
 ```
 
-![我的 /etc/pam.d/sudo](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/howdy/config.png)
+![我的 /etc/pam.d/sudo](https://chitangcos.zyglq.cn/images/howdy/config.png)
 
 接着最好重启下电脑
 
 尝试一下再用 sudo 干点事
 
-![芜湖起飞](https://chitang-main-1256617490.cos.ap-shanghai.myqcloud.com/images/howdy/use.png)
+![芜湖起飞](https://chitangcos.zyglq.cn/images/howdy/use.png)
 
