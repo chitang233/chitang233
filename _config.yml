@@ -97,11 +97,6 @@ theme: yun
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: 
-    github: git@github.com:chitang233/chitang233
-    #gitee: https://gitee.com/chitang233/chitang233.git
-  branch: pages
 
 # Live2D
 live2d:
