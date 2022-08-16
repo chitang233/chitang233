@@ -1,8 +1,14 @@
 ---
-title: "在 Linux 上搭建 CrepeSR (崩坏: 星穹铁道 社区服务器)"
-date: 2022-08-04 17:40:21
+title: '在 Linux 上搭建 CrepeSR (崩坏: 星穹铁道 社区服务器)'
 hide: false
-tags: [CrepeSR, 星穹铁道, Linux, 私服, Guide]
+tags:
+  - CrepeSR
+  - 星穹铁道
+  - Linux
+  - 私服
+  - Guide
+abbrlink: 57251
+date: 2022-08-04 17:40:21
 ---
 
 在 Linux 上搭建 CrepeSR (崩坏: 星穹铁道 社区服务器)
