@@ -344,7 +344,7 @@ local_search:
   src: /js/search/local-search.js
 
 busuanzi:
-  enable: true
+  enable: false
   site_uv: true
   site_uv_icon: ri:user-line
   site_pv: true
