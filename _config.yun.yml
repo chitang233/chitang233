@@ -239,7 +239,7 @@ lazyload:
   enable: true
 
 reward:
-  enable: true
+  enable: false
   icon: ri:hand-coin-line
   comment: 给点饭钱
   methods:
