@@ -123,7 +123,7 @@ links:
   - url: https://internetbugs.moe
     avatar: https://internetbugs.moe/favicon.ico
     name: InternetBugs
-    blog: InternetBugs的个人小站
+    blog: InternetBugs的小站
     desc: 一个分享互联网技术的个人博客
     color: '#00aaff'
   
