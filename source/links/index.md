@@ -9,14 +9,15 @@ links:
   - url: https://blog.kiteab.me
     avatar: https://q1.qlogo.cn/g?b=qq&nk=251877082&s=640
     name: KiteAB
-    blog: KiteAB’s Blog
+    blog: KiteAB's Blog
+    color: "#39c5bb"
     desc: 废柴初中生一个
-    color: "#000000"
     email: kiteabpl@outlook.com
 
   - url: https://ssmzhn.vercel.app
     avatar: https://q1.qlogo.cn/g?b=qq&nk=3285956207&s=640
     name: NameSetter
+    color: "#39c5bb"
     blog: NameSetter's Blog
     desc: 一个专靠CV运营的博客罢了
     email: ssmzhn-bilibili@outlook.com
@@ -38,14 +39,9 @@ links:
 
   - url: https://blog.yidaozhan.top
     avatar: https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640
+    desc: 普通摸鱼高中生的博客
     name: 一刀斩
     blog: 一刀斩の小窝
-
-  - url: https://sugarmgp.github.io/
-    avatar: https://sugarmgp.github.io/images/avatar.png
-    name: 白糖洒一地
-    blog: SugerMGP's Blog
-    color: "#00aaff"
 
   - url: https://blog.dianas.cyou
     avatar: https://blog.dianas.cyou/img/favicon.png
@@ -65,6 +61,7 @@ links:
     avatar: https://chitangcos.zyglq.cn/images/march7th/avatar.jpg 
     name: 三月七
     blog: 三月七的网站
+    desc: 会搞点东西的普通高中生
     color: "pink"
     email: i@march7th.tk
 
@@ -72,6 +69,7 @@ links:
     avatar: https://诺艾尔.我爱你/images/logo.png
     name: 一穗灯花
     blog: 灯花小屋
+    desc: 我们是宇宙的尘埃，佩戴着璀璨的星辰。
     color: "pink"
 
   - url: https://kimmyxyc.top
