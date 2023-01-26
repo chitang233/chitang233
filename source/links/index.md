@@ -15,7 +15,7 @@ links:
     email: kiteabpl@outlook.com
 
   - url: https://ssmzhn.vercel.app
-    avatar: https://q1.qlogo.cn/g?b=qq&nk=3285956207&s=640
+    avatar: https://ssmzhn.vercel.app/images/avatar.png
     name: NameSetter
     color: "#39c5bb"
     blog: NameSetter's Blog
@@ -23,7 +23,7 @@ links:
     email: ssmzhn-bilibili@outlook.com
 
   - url: https://blog.archlinux.tech
-    avatar: https://q1.qlogo.cn/g?b=qq&nk=3272912942&s=640
+    avatar: https://pcos.zyglq.cn/%E4%BC%8A%E8%95%BE%E5%A8%9C.png
     name: purofle
     blog: purofleのBlog
     desc: 不定时的写一些没有营养的东西，随缘更新。
@@ -38,7 +38,7 @@ links:
     color: "#39c5bb"
 
   - url: https://blog.yidaozhan.top
-    avatar: https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640
+    avatar: https://imgsrc.baidu.com/super/pic/item/962bd40735fae6cde49261a44ab30f2443a70fd5.jpg
     desc: 普通摸鱼高中生的博客
     name: 一刀斩
     blog: 一刀斩の小窝
