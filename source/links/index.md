@@ -45,7 +45,7 @@ links:
     avatar: https://sugarmgp.github.io/images/avatar.png
     name: 白糖洒一地
     blog: SugerMGP's Blog
-    color: "#blue"
+    color: "#00aaff"
 
   - url: https://blog.dianas.cyou
     avatar: https://blog.dianas.cyou/img/favicon.png
@@ -58,7 +58,7 @@ links:
     avatar: https://cdn.cyznb.moe/head1x2.png
     name: BLxcwg666
     blog: BLxcwg666 's Blog
-    color: "#blue"
+    color: "#00aaff"
     desc: BLxcwg666/小陈网管 的博客
 
   - url: https://march7th.tk
@@ -78,7 +78,7 @@ links:
     avatar: https://www.kimmyxyc.top/img/favicon.jpg
     name: KimmyXYC
     blog: KimmyXYC's Blog
-    color: "#blue"
+    color: "#00aaff"
     email: kimmyxyc@126.com
     desc: 嗯？谁在那里？
   
@@ -86,7 +86,7 @@ links:
     avatar: https://q1.qlogo.cn/g?b=qq&nk=743868237&s=640
     name: Aidenpers
     blog: 艾登的个人网站
-    color: "blue"
+    color: "#00aaff"
     email: Aidenpers@outlook.com
     desc: 随便看看吧~~
 
@@ -121,6 +121,13 @@ links:
     desc: 笨蛋ovo的个人主页
     color: '#f6a900'
     email: me@ayaka.ink
+
+  - url: https://internetbugs.moe
+    avatar: https://internetbugs.moe/favicon.ico
+    name: InternetBugs
+    blog: InternetBugs的个人小站
+    desc: 一个分享互联网技术的个人博客
+    color: '#00aaff'
   
 
 placeholder: 没有说明 # 默认对友链的描述
