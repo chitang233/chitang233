@@ -1,5 +1,6 @@
 ---
 title: Arch Linux 折腾指南
+categories: 折腾
 tags:
   - Arch
   - Linux

@@ -1,5 +1,6 @@
 ---
 title: 年轻人的第一个 YubiKey
+categories: 日常
 tags:
   - YubiKey
   - Linux

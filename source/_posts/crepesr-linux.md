@@ -1,6 +1,6 @@
 ---
 title: '在 Linux 上搭建 CrepeSR (崩坏: 星穹铁道 社区服务器)'
-hide: false
+categories: 折腾
 tags:
   - CrepeSR
   - 星穹铁道

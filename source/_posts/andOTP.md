@@ -1,5 +1,6 @@
 ---
 title: 'andOTP - 开源, 多协议的手机验证器'
+categories: 折腾
 tags:
   - Android
   - Open Source

@@ -2,11 +2,11 @@
 title: acme.sh 使用教程
 abbrlink: 1304
 date: 2022-10-30 18:04:41
+categories: 折腾
 tags: 
     - acme.sh
     - SSL
     - 证书
-    - 教程
 ---
 
 ## 准备

@@ -1,5 +1,6 @@
 ---
 title: Howdy - Linux 的人脸识别
+categories: 折腾
 tags: [Linux, 教程]
 abbrlink: 53425
 date: 2020-10-02 19:49:33
