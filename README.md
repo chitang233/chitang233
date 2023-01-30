@@ -76,11 +76,11 @@ TOML               18 mins         █░░░░░░░░░░░░░░
 #### 📕 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [2022 —— 仿佛什么都干了，又好像什么都没干](https://blog.chitang.dev/posts/2022-year/)
 - [年轻人的第一个 YubiKey](https://blog.chitang.dev/posts/yubikey/)
 - [acme.sh 使用教程](https://blog.chitang.dev/posts/acme-guide/)
-- [常用的 DNS 服务器](https://blog.chitang.dev/posts/dns-servers/)
-- [小米 11 搞机指南](https://blog.chitang.dev/posts/xiaomi-11/)
 - [在 Linux 上搭建 CrepeSR &lpar;崩坏: 星穹铁道 社区服务器&rpar;](https://blog.chitang.dev/posts/crepesr-linux/)
+- [使用 Hexo 与 Vercel 零成本打造你的个人博客](https://blog.chitang.dev/posts/hexo-vercel-blog/)
 <!-- BLOG-POST-LIST:END -->
 
 ---
