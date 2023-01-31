@@ -69,11 +69,10 @@ social:
     link: https://matrix.to/#/@sbchitang:matrix.org
     icon: ri:chat-smile-fill
     color: "#000000"
-#  - name: Travelling
-#    link: https://travellings.link
-#    icon: ri:send-plane-2-line
-#    color: black
-
+  - name: Misskey
+    link: https://neko.ci/@chitang233
+    icon: ri:mastodon-fill
+    color: "#e36749"
 
 banner:
   enable: true
@@ -99,9 +98,7 @@ bg_image:
   opacity: 0.8
 
 engine_search:
-  enable: true
-  href: "https://www.google.com/search?q=site:"
-  domain: blog.chitang.dev
+  enable: false
 
 search:
   modal: true
@@ -163,12 +160,16 @@ menu:
     - type: archives
       path: /archives/
       icon: ri:archive-line
-    - type: categories
-      path: /categories/
-      icon: ri:folder-2-line
     - type: tags
       path: /tags/
       icon: ri:price-tag-3-line
+    - type: categories
+      path: /categories/
+      icon: ri:folder-2-line
+  custom:
+    title: 捐赠
+    path: https://donate.chitang.dev
+    icon: ri:hand-coin-line
 
 pages:
   - name: 友链
@@ -233,25 +234,6 @@ lazyload:
 
 reward:
   enable: false
-  icon: ri:hand-coin-line
-  comment: 给点饭钱
-  methods:
-     - name: 爱发电
-       path: https://chitangcos.zyglq.cn/images/QRCodes/afdian.png
-       color: "#7b5bc3"
-       icon: /icon/afdian.png
-#    - name: 支付宝
-#      path: /images/QRCodes/alipay.png
-#      color: "#00A3EE"
-#      icon: ri:alipay-line
-#    - name: QQ 支付
-#      path: /images/QRCodes/qq.png
-#      color: "#12B7F5"
-#      icon: ri:qq-line
-#    - name: 微信支付
-#      path: /images/QRCodes/wechat.png
-#      color: "#2DC100"
-#      icon: ri:wechat-pay-line
 
 footer:
   since: 2020
