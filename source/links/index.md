@@ -50,8 +50,8 @@ links:
     color: "pink"
     desc: 写点文字
 
-  - url: https://blog.cyznb.moe/
-    avatar: https://cdn.cyznb.moe/head1x2.png
+  - url: https://blog.blxcnya.cn/
+    avatar: https://cdn.blxcnya.cn/head1x2.png
     name: BLxcwg666
     blog: BLxcwg666 's Blog
     color: "#00aaff"
