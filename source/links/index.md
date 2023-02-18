@@ -34,7 +34,7 @@ links:
     avatar: https://cos.zyglq.cn/static/web-logo.jpg
     name: explorer
     blog: explorer的blog
-    desc: 14岁，事初中生
+    desc: 心中有光，对立重伤
     color: "#39c5bb"
 
   - url: https://blog.yidaozhan.top
@@ -119,13 +119,6 @@ links:
     desc: 笨蛋ovo的个人主页
     color: '#f6a900'
     email: me@ayaka.ink
-
-  - url: https://internetbugs.moe
-    avatar: https://internetbugs.moe/favicon.ico
-    name: InternetBugs
-    blog: InternetBugs的小站
-    desc: 一个分享互联网技术的个人博客
-    color: '#00aaff'
   
 
 placeholder: 没有说明 # 默认对友链的描述
