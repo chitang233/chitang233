@@ -83,11 +83,9 @@ Reset FIDO 不要乱点，否则会导致之前设置的验证器均无法使用
 
 自己设置的 PIN 一定要记住，否则无法恢复
 
-## FIDO2 / WebAuthn
+## WebAuthn
 
 (也许是)作为安全密钥最基础的功能
-
-可能需要的软件包: `libfido2`
 
 几乎无需配置，在 Firefox 和 Chromium 上均能够做到开箱即用
 
@@ -159,6 +157,119 @@ ssh-keygen -t ed25519-sk
 
 验证时需要点击 YubiKey 的按钮以确认
 
+## 作为 SSH 密钥
+
+与 [验证 SSH 密钥](#验证-ssh-密钥) 不同
+
+这个方法是利用 `gpg-agent` 将 GPG 密钥作为 SSH 使用，从而间接将 YubiKey 作为 SSH 密钥
+
+> 在执行以下步骤前，需要确保配置好 [OpenPGP 智能卡](#openpgp-智能卡)
+
+暂时关闭 `gpg-agent`
+
+```shell
+systemctl stop --user gpg-agent
+```
+
+执行下面的命令，启用 SSH 支持
+
+```shell
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+```
+
+导出 SSH 公钥
+
+```shell
+gpg --export-ssh-key <你的 OpenPGP 指纹>
+```
+
+将输出的内容作为 SSH 公钥添加到你的服务器并尝试连接
+
+不出意外的话，应该会提示你输入 PIN 且能够成功连接
+
+若如此，将上面的命令添加到 `~/.bashrc` `~/.zshrc` 等文件中，或者放在任何能够在登录时执行的地方
+
+## 作为 LUKS 密钥
+
+> 在执行以下步骤前，需要确保已有一块配置好 LUKS 加密的硬盘
+
+### 添加 FIDO2 Token
+
+备份现有 LUKS 头
+
+```shell
+sudo cryptsetup luksHeaderBackup <device> --header-backup-file luks-header-backup.bin
+```
+
+将 `luks-header-backup.bin` 放到一个安全的地方，别放在要拿来折腾的硬盘上
+
+然后执行
+
+```shell
+sudo systemd-cryptenroll --fido2-device=auto <device>
+```
+
+需要注意的是，在输入 FIDO2 PIN 之后要按下 YubiKey 的按钮
+
+提示 `Successfully enrolled FIDO2 token.` 后查看 luksDump 信息
+
+```shell
+sudo cryptsetup luksDump <device>
+```
+
+在输出内容里应该会有 `systemd-fido2` 字样
+
+### 加密非根分区
+
+在 `/etc/crypttab` 中添加 `systemd-fido2` 选项即可
+
+```
+<mapper> <device> - fido2-device=auto
+```
+
+### 加密根分区
+
+需要在 initramfs 中使用 systemd 提供的加密钩子，以 `mkinitcpio` 为例
+
+编辑 `/etc/mkinitcpio.conf`，找到 `HOOKS=(`
+
+若原本的内容类似这样（不使用 `systemd` 钩子）
+
+```
+HOOKS=(base udev autodetect modconf kms keyboard keymap consolefont block encrypt filesystems fsck)
+```
+
+应替换为这样（使用 `systemd`, `sd-vconsole`, `sd-encrypt` 钩子）
+
+```
+HOOKS=(base systemd autodetect modconf kms keyboard sd-vconsole block sd-encrypt filesystems fsck)
+```
+
+重新生成 initramfs
+
+```shell
+sudo mkinitcpio -P
+```
+
+还需要更改命令行参数，以 GRUB2 为例
+
+编辑 `/etc/default/grub`，找到 `GRUB_CMDLINE_LINUX_DEFAULT`，替换以下内容
+
+`cryptdevice=<device>:<mapper>` `->` `rd.luks.name=<device>=<mapper>`
+
+并添加 `rd.luks.options=fido2-device=auto`，最终内容类似这样
+
+```
+rd.luks.name=770fb196-f4c2-4868-ae30-baeed76484ec=root rd.luks.options=fido2-device=auto
+```
+
+然后，重新生成 GRUB 配置文件
+
+```shell
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
 ## 用作 PAM 模块
 
 > 本段内容参考自 [ArchWiki](https://wiki.archlinux.org/title/Universal_2nd_Factor#Authentication_for_Arch_Linux)
@@ -182,9 +293,3 @@ auth            sufficient      pam_u2f.so cue origin=pam://hostname appid=pam:/
 其他也同理，比如 `system-login` `system-auth` `sddm` `kde`
 
 需要注意的是，SDDM 需要先点击一次登录按钮(或按下回车)再点击 YubiKey 的按钮才能验证
-
-## 一些别的废话
-
-YubiKey 能做到的事远比这篇文章所写的要多，比如直接用作 SSH 密钥、配合 LUKS 加密硬盘~~，但很明显这些我都不会，官方的文档着实看不太明白~~
-
-有没有会折腾的来教教我——
