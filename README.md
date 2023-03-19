@@ -16,7 +16,12 @@
 <!--START_SECTION:waka-->
 
 ```text
-No activity tracked
+C++              17 mins         █████████████████▓░░░░░░░   70.30 %
+Python           6 mins          ██████▓░░░░░░░░░░░░░░░░░░   26.44 %
+GitIgnore file   0 secs          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.17 %
+Text             0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.49 %
+Markdown         0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.38 %
+CMake            0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.22 %
 ```
 
 <!--END_SECTION:waka-->
