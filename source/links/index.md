@@ -23,7 +23,7 @@ links:
     email: ssmzhn-bilibili@outlook.com
 
   - url: https://blog.archlinux.tech
-    avatar: https://pcos.zyglq.cn/%E4%BC%8A%E8%95%BE%E5%A8%9C.png
+    avatar: https://cos.zyglq.cn/static/link-pic/230124.archlinux.tech.png
     name: purofle
     blog: purofleのBlog
     desc: 不定时的写一些没有营养的东西，随缘更新。
@@ -38,7 +38,7 @@ links:
     color: "#39c5bb"
 
   - url: https://blog.yidaozhan.top
-    avatar: https://imgsrc.baidu.com/super/pic/item/962bd40735fae6cde49261a44ab30f2443a70fd5.jpg
+    avatar: https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640
     desc: 普通摸鱼高中生的博客
     name: 一刀斩
     blog: 一刀斩の小窝
@@ -119,6 +119,13 @@ links:
     desc: 笨蛋ovo的个人主页
     color: '#f6a900'
     email: me@ayaka.ink
+
+  - url: https://易然.xyz
+    avatar: https://cos.zyglq.cn/static/link-pic/230220.yiran.xyz.jpg
+    name: 易然
+    blog: YiRan's Blog
+    color: "#bdbd65"
+    desc: 易然的猫窝
   
 
 placeholder: 没有说明 # 默认对友链的描述
