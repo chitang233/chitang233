@@ -16,9 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```text
-Markdown    6 mins          ███████████████▓░░░░░░░░░   63.12 %
-sshconfig   3 mins          █████████░░░░░░░░░░░░░░░░   35.90 %
-sh          0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.98 %
+Other   3 mins          ██████████████████████░░░   88.38 %
 ```
 
 <!--END_SECTION:waka-->
