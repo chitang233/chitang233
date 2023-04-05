@@ -50,12 +50,12 @@ links:
     color: "pink"
     desc: 写点文字
 
-  - url: https://blog.blxcnya.cn/
-    avatar: https://cdn.blxcnya.cn/head1x2.png
+  - url: https://blog.xcnya.cn/
+    avatar: https://cdn.xcnya.cn/head1x2.webp
     name: BLxcwg666
     blog: BLxcwg666 's Blog
     color: "#00aaff"
-    desc: BLxcwg666/小陈网管 的博客
+    desc: 一只可爱的绒布球猫猫的博客喵~
 
   - url: https://march7th.tk
     avatar: https://chitangcos.zyglq.cn/images/march7th/avatar.jpg 
