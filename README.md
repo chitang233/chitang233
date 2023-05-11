@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```text
-Python   8 mins          ██████████████████▒░░░░░░   72.78 %
-CSS      2 mins          ████▓░░░░░░░░░░░░░░░░░░░░   19.23 %
-zsh      0 secs          █░░░░░░░░░░░░░░░░░░░░░░░░   04.25 %
-YAML     0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.98 %
-Other    0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.70 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
