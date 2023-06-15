@@ -16,7 +16,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+YAML      52 mins         ██████████████░░░░░░░░░░░   56.12 %
+Bash      25 mins         ███████░░░░░░░░░░░░░░░░░░   27.34 %
+JSON      9 mins          ██▓░░░░░░░░░░░░░░░░░░░░░░   10.40 %
+Other     4 mins          █░░░░░░░░░░░░░░░░░░░░░░░░   04.28 %
+desktop   1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.81 %
 ```
 
 <!--END_SECTION:waka-->
