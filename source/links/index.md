@@ -57,14 +57,6 @@ links:
     color: "#00aaff"
     desc: 一只可爱的绒布球猫猫的博客喵~
 
-  - url: https://march7th.tk
-    avatar: https://chitangcos.zyglq.cn/images/march7th/avatar.jpg 
-    name: 三月七
-    blog: 三月七的网站
-    desc: 会搞点东西的普通高中生
-    color: "pink"
-    email: i@march7th.tk
-
   - url: https://诺艾尔.我爱你
     avatar: https://诺艾尔.我爱你/images/logo.png
     name: 一穗灯花
@@ -89,28 +81,20 @@ links:
     desc: 随便看看吧~~
 
   - url: https://blog.cnmobile.link/
-    avatar: https://blog.cnmobile.link/favoico.webp
-    name: LiangBurs
-    blog: LiangBurs' Blog
+    avatar: https://cnmobile.link/blog_pic/logo.webp
+    name: Yukina Hisazumi
+    blog: Yukina' Blog
     color: "pink"
     desc: May all the beauty be blessed.
-    email: 2778140181@qq.com
+    email: yukina@cnmobile.link
 
-  - url: https://shiinayuki.me/
-    avatar: https://assets.shiinayuki.me/pics/avator.png
-    name: 椎名 雪
-    blog: 椎名雪的 Blog
-    desc: 让我困在城市里纪念你。
-    email: contact@shiinayuki.me
-    color: '#f6a900'
-  
-  - url: https://blog.ayaka.ink
-    avatar: https://tkmcos.zyglq.cn/blog-files/pic/avatar/me.jpg
-    name: Takami
-    blog: TakamiのBlog
+  - url: https://blog.rikko.moe
+    avatar: https://cdn.rikko.moe/static/avatar/me.webp
+    name: Asuka Miya
+    blog: かしんふう - 静待花开
     desc: 是谁呢
     color: '#f6a900'
-    email: me@ayaka.ink
+    email: me@rikko.moe
   
   - url: https://bdovo.cc
     avatar: https://ghproxy.com/github.com/liuran001/liuran001/raw/master/icon.jpg
@@ -126,7 +110,13 @@ links:
     blog: YiRan's Blog
     color: "#bdbd65"
     desc: 易然的猫窝
-  
+
+  - url: https://blog.molyuu.cyou
+    avatar: https://avatars.githubusercontent.com/u/102394810
+    name: Molyuu
+    blog: Molyuu's Blog
+    color: "#3273dc"
+
 
 placeholder: 没有说明 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～

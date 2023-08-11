@@ -69,10 +69,6 @@ social:
     link: https://matrix.to/#/@sbchitang:matrix.org
     icon: ri:chat-smile-fill
     color: "#000000"
-  - name: Misskey
-    link: https://neko.ci/@chitang233
-    icon: ri:mastodon-fill
-    color: "#e36749"
 
 banner:
   enable: true
