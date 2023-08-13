@@ -117,6 +117,14 @@ links:
     blog: Molyuu's Blog
     color: "#3273dc"
 
+  - url: https://www.thynanami.com/
+    avatar: https://mx-space.thynanami.dev/api/v2/objects/icon/8yzwx1ezf3tlsbv7kf.jpeg
+    name: Nananmi Nakano
+    blog: Nanami's secret base
+    desc: 游戏宅的自我介绍
+    color: "#f77287"
+    email: thynanami@foxmail.com
+
 
 placeholder: 没有说明 # 默认对友链的描述
 tip: 友链加载中～如失败请刷新重试～
