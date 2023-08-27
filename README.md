@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-YAML             51 mins         █████████████████████▒░░░   85.04 %
-JSON             4 mins          █▓░░░░░░░░░░░░░░░░░░░░░░░   07.27 %
-Kotlin           3 mins          █▒░░░░░░░░░░░░░░░░░░░░░░░   05.37 %
-GitIgnore file   0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.16 %
-Bash             0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.68 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
