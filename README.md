@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Bash           36 mins         ██████████████▒░░░░░░░░░░   56.99 %
-ActionScript   14 mins         █████▓░░░░░░░░░░░░░░░░░░░   22.57 %
-Ezhil          6 mins          ██▓░░░░░░░░░░░░░░░░░░░░░░   10.28 %
-GDScript       3 mins          █▒░░░░░░░░░░░░░░░░░░░░░░░   05.15 %
-Objective-C    1 min           ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.03 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
