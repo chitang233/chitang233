@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Go               20 mins         ██████████▒░░░░░░░░░░░░░░   41.33 %
-Bash             18 mins         █████████▒░░░░░░░░░░░░░░░   37.62 %
-Shell Script     4 mins          ██▒░░░░░░░░░░░░░░░░░░░░░░   08.82 %
-DTD              2 mins          █▒░░░░░░░░░░░░░░░░░░░░░░░   05.08 %
-Assembly         2 mins          █▒░░░░░░░░░░░░░░░░░░░░░░░   04.77 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
