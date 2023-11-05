@@ -16,7 +16,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+Kotlin           58 mins         ███████████████████████▓░   94.14 %
+Markdown         1 min           ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.41 %
+XML              1 min           ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.18 %
+Shell Script     0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.62 %
+Text             0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.24 %
 ```
 
 <!--END_SECTION:waka-->
