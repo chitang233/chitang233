@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-YAML              1 hr 40 mins    ███████████████░░░░░░░░░░   59.48 %
-Kotlin            40 mins         ██████░░░░░░░░░░░░░░░░░░░   24.15 %
-XML               15 mins         ██▒░░░░░░░░░░░░░░░░░░░░░░   09.30 %
-Markdown          5 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.23 %
-GitIgnore file    2 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.23 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
