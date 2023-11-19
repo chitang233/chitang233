@@ -37,11 +37,11 @@ links:
     desc: 心中有光，对立重伤
     color: "#39c5bb"
 
-  - url: https://blog.yidaozhan.top
+  - url: https://blog.chyk.ink/
     avatar: https://q1.qlogo.cn/g?b=qq&nk=3526514925&s=640
-    desc: 普通摸鱼高中生的博客
-    name: 一刀斩
-    blog: 一刀斩の小窝
+    desc: 浩繁星空下的一场稚嫩的梦
+    name: 斬風·千雪
+    blog: 千雪的咖啡厅
 
   - url: https://blog.dianas.cyou
     avatar: https://blog.dianas.cyou/img/favicon.png
