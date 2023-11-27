@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Java Properties   31 mins         ██████▓░░░░░░░░░░░░░░░░░░   26.80 %
-YAML              31 mins         ██████▓░░░░░░░░░░░░░░░░░░   26.49 %
-Gradle            17 mins         ███▓░░░░░░░░░░░░░░░░░░░░░   15.09 %
-Markdown          10 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   08.65 %
-Shell Script      7 mins          █▓░░░░░░░░░░░░░░░░░░░░░░░   06.07 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
