@@ -16,10 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-zsh         13 mins         ███████████▓░░░░░░░░░░░░░   46.28 %
-udevrules   11 mins         ██████████▒░░░░░░░░░░░░░░   41.08 %
-Markdown    2 mins          ██▒░░░░░░░░░░░░░░░░░░░░░░   09.25 %
-confini     0 secs          █░░░░░░░░░░░░░░░░░░░░░░░░   03.39 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
