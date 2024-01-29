@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-sshconfig        12 mins         ████████████████████████▒   96.77 %
-YAML             0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.33 %
-GitIgnore file   0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.80 %
-Kotlin           0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.76 %
-Properties       0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.19 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
