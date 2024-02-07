@@ -50,12 +50,12 @@ links:
     color: "pink"
     desc: 写点文字
 
-  - url: https://blog.xcnya.cn/
-    avatar: https://cdn.xcnya.cn/head1x2.webp
+  - url: https://blog.nekorua.com/
+    avatar: https://cos.nekorua.com/imgs/head1x2.webp
     name: BLxcwg666
-    blog: BLxcwg666 's Blog
+    blog: BLxcwg666 の Blog
     color: "#00aaff"
-    desc: 一只可爱的绒布球猫猫的博客喵~
+    desc: 静かで奥深い
 
   - url: https://诺艾尔.我爱你
     avatar: https://诺艾尔.我爱你/images/logo.png
