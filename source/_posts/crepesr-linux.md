@@ -189,7 +189,7 @@ mitmproxy --version
 
 如果输出类似下图的版本号而不出现报错则为环境配置完成
 
-![依赖](https://chitangcos.zyglq.cn/images/crepesr-linux/dep.png)
+![依赖](https://r2.chitang.dev/images/crepesr-linux/dep.png)
 
 ## 安装 CrepeSR
 
@@ -202,7 +202,7 @@ git clone https://github.com/memetrollsXD/CrepeSR-Resources CrepeSR/src/data --d
 
 在完成后, `CrepeSR` 文件夹内的文件结构应与下图基本一致
 
-![文件结构](https://chitangcos.zyglq.cn/images/crepesr-linux/crepesr-files.png)
+![文件结构](https://r2.chitang.dev/images/crepesr-linux/crepesr-files.png)
 
 ### 安装依赖
 
@@ -217,7 +217,7 @@ cd CrepeSR
 npm install
 ```
 
-![完成](https://chitangcos.zyglq.cn/images/crepesr-linux/npm-install.png)
+![完成](https://r2.chitang.dev/images/crepesr-linux/npm-install.png)
 
 ### 端口设置
 

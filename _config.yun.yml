@@ -10,7 +10,7 @@ tags:
 
 head:
   css:
-    remix-icon: https://chitangcos.zyglq.cn/css/remixicon.css
+    remix-icon: https://r2.chitang.dev/css/remixicon.css
 
 font:
   cdn:
@@ -38,11 +38,11 @@ prefetch:
 
 dns_prefetch:
   - https://cos.yunyoujun.cn
-  - https://chitangcos.zyglq.cn
+  - https://r2.chitang.dev
 
 preconnect:
   - https://fastly.jsdelivr.net
-  - https://chitangcos.zyglq.cn
+  - https://r2.chitang.dev
 
 social:
   - name: RSS
@@ -98,7 +98,7 @@ engine_search:
 
 search:
   modal: true
-  bg_image: https://chitangcos.zyglq.cn/images/bg/stars-timing-2.jpg
+  bg_image: https://r2.chitang.dev/images/bg/stars-timing-2.jpg
   # dark_bg_image: xxx
   # placeholder:
 
@@ -123,17 +123,17 @@ scrollreveal:
     - .post-card
     - .markdown-body img
 
-favicon: https://chitangcos.zyglq.cn/images/favicon.png
+favicon: https://r2.chitang.dev/images/favicon.png
 
 
 cursor:
   enable: true
-  default: https://chitangcos.zyglq.cn/css/md-cursors/pointer.cur
-  pointer: https://chitangcos.zyglq.cn/css/md-cursors/link.cur
-  text: https://chitangcos.zyglq.cn/css/md-cursors/text.cur
+  default: https://r2.chitang.dev/css/md-cursors/pointer.cur
+  pointer: https://r2.chitang.dev/css/md-cursors/link.cur
+  text: https://r2.chitang.dev/css/md-cursors/text.cur
 
 sidebar:
-  bg_image: https://chitangcos.zyglq.cn/images/bg/stars-timing-1.jpg
+  bg_image: https://r2.chitang.dev/images/bg/stars-timing-1.jpg
   bg_position: bottom 3rem center
   tagcloud:
     enable: false
@@ -141,7 +141,7 @@ sidebar:
 
 avatar:
   enable: true
-  url: https://chitangcos.zyglq.cn/images/avatar.webp
+  url: https://r2.chitang.dev/images/avatar.webp
   rounded: true
   opacity: 1
   mickey_mouse: false
