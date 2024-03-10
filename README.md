@@ -16,7 +16,10 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+conf      37 mins         █████████████░░░░░░░░░░░░   52.53 %
+desktop   26 mins         █████████▒░░░░░░░░░░░░░░░   37.34 %
+Other     5 mins          ██░░░░░░░░░░░░░░░░░░░░░░░   07.59 %
+Bash      1 min           ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.54 %
 ```
 
 <!--END_SECTION:waka-->
