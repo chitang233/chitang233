@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Python             26 mins         █████████████████▒░░░░░░░   69.33 %
-Other              4 mins          ███░░░░░░░░░░░░░░░░░░░░░░   12.07 %
-GitIgnore file     4 mins          ██▓░░░░░░░░░░░░░░░░░░░░░░   10.62 %
-Text               1 min           █▒░░░░░░░░░░░░░░░░░░░░░░░   05.23 %
-Requirements.txt   0 secs          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.34 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
