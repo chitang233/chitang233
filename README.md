@@ -16,10 +16,8 @@
 <!--START_SECTION:waka-->
 
 ```txt
-YAML               8 mins          ████████████████████████░   96.45 %
-Python             0 secs          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.09 %
-conf               0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.92 %
-Requirements.txt   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.54 %
+Python             0 secs          ████████████████████░░░░░   79.63 %
+Requirements.txt   0 secs          █████░░░░░░░░░░░░░░░░░░░░   20.37 %
 ```
 
 <!--END_SECTION:waka-->
