@@ -16,8 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Python             0 secs          ████████████████████░░░░░   79.63 %
-Requirements.txt   0 secs          █████░░░░░░░░░░░░░░░░░░░░   20.37 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
