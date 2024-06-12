@@ -61,14 +61,6 @@ social:
     link: https://t.me/chitang233
     icon: ri:telegram-line
     color: "#0088CC"
-  - name: Telegram Channel
-    link: https://chitang.studio
-    icon: ri:telegram-fill
-    color: "#0088CC"
-  - name: Matrix
-    link: https://matrix.to/#/@sbchitang:matrix.org
-    icon: ri:chat-smile-fill
-    color: "#000000"
 
 banner:
   enable: true
