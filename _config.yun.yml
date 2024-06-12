@@ -245,12 +245,7 @@ say:
     api: https://v1.hitokoto.cn
 
 mourn:
-  enable: true
-  days:
-    - "4-4"
-    - "12-13"
-    - "7-7"
-    - "11-30" # 江
+  enable: false
 
 girls:
   enable: false
