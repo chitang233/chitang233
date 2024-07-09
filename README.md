@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-HTML             1 hr 18 mins    ███████████████████▓░░░░░   79.25 %
-Rust             8 mins          ██▒░░░░░░░░░░░░░░░░░░░░░░   09.06 %
-TOML             6 mins          █▓░░░░░░░░░░░░░░░░░░░░░░░   06.38 %
-JavaScript       2 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.60 %
-Markdown         0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.85 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
