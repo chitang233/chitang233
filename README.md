@@ -1,6 +1,6 @@
 ### 👋 Hi, I'm Chi_Tang (池塘)
 
-—— A 15-year-old student from Shandong, China.
+—— A 16-year-old student from Shandong, China.
 
 [SSH Public Key](https://gist.githubusercontent.com/chitang233/741d438a469cb8c74a6aed6e6e9b3ff1/raw/2f2b0470511fe08f07fe8c99a6853ae98910652d/SSH%2520Public%2520Key)
 
