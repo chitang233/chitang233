@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-YAML              46 mins         ████████████▓░░░░░░░░░░░░   51.02 %
-Python            32 mins         ████████▓░░░░░░░░░░░░░░░░   35.13 %
-Java Properties   6 mins          █▓░░░░░░░░░░░░░░░░░░░░░░░   06.93 %
-Markdown          3 mins          █░░░░░░░░░░░░░░░░░░░░░░░░   04.26 %
-Kotlin            1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.68 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
