@@ -16,7 +16,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+Bash             28 mins         █████████████████████░░░░   83.99 %
+Shell Script     2 mins          ██░░░░░░░░░░░░░░░░░░░░░░░   07.91 %
+Other            2 mins          ██░░░░░░░░░░░░░░░░░░░░░░░   07.79 %
+Markdown         0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.23 %
+GitIgnore file   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.07 %
 ```
 
 <!--END_SECTION:waka-->
