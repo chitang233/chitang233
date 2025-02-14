@@ -16,8 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-confini   0 secs          █████████████░░░░░░░░░░░░   52.22 %
-YAML      0 secs          ████████████░░░░░░░░░░░░░   47.78 %
+YAML   0 secs          █████████████████████████   100.00 %
 ```
 
 <!--END_SECTION:waka-->
