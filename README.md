@@ -25,7 +25,7 @@ JSON              18 mins         ██▒░░░░░░░░░░░░�
 
 <!--END_SECTION:waka-->
 
-- Contact me:
+#### 📞 Contact
   - [Telegram](https://t.me/chitang233)
   - [E-Mail](mailto:me@chitang.dev)
 
