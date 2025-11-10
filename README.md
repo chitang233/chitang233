@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-TOML         21 mins         ████████░░░░░░░░░░░░░░░░░   32.06 %
-Bash         19 mins         ███████▒░░░░░░░░░░░░░░░░░   29.32 %
-YAML         13 mins         █████░░░░░░░░░░░░░░░░░░░░   20.58 %
-Rust         5 mins          ██▒░░░░░░░░░░░░░░░░░░░░░░   08.91 %
-Other        3 mins          █▓░░░░░░░░░░░░░░░░░░░░░░░   06.00 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
