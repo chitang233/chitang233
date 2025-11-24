@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-TypeScript   52 mins         ████████▒░░░░░░░░░░░░░░░░   33.74 %
-TOML         51 mins         ████████▒░░░░░░░░░░░░░░░░   33.53 %
-YAML         21 mins         ███▒░░░░░░░░░░░░░░░░░░░░░   13.67 %
-Markdown     15 mins         ██▓░░░░░░░░░░░░░░░░░░░░░░   10.14 %
-TSConfig     12 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   08.11 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
