@@ -16,7 +16,8 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+Bash   4 mins          ███████████████████████▒░   93.44 %
+C#     0 secs          █▓░░░░░░░░░░░░░░░░░░░░░░░   06.56 %
 ```
 
 <!--END_SECTION:waka-->
