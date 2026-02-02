@@ -16,7 +16,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+Kotlin           1 hr 18 mins    █████████████████▓░░░░░░░   70.63 %
+JSON             31 mins         ███████░░░░░░░░░░░░░░░░░░   28.11 %
+Python           1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.14 %
+GitIgnore file   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.06 %
+Markdown         0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.05 %
 ```
 
 <!--END_SECTION:waka-->
