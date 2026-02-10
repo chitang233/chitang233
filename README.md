@@ -16,7 +16,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+Dart     56 mins         ███████████████░░░░░░░░░░   60.65 %
+YAML     35 mins         █████████▒░░░░░░░░░░░░░░░   37.65 %
+Python   1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.20 %
+XML      0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.48 %
+Kotlin   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.03 %
 ```
 
 <!--END_SECTION:waka-->
