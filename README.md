@@ -16,10 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-TypeScript   0 secs                ███████████░░░░░░░░░░░░░░   43.49 %
-Markdown     0 secs                ████████▒░░░░░░░░░░░░░░░░   33.53 %
-YAML         0 secs                ███▒░░░░░░░░░░░░░░░░░░░░░   12.95 %
-TSConfig     0 secs                ██▓░░░░░░░░░░░░░░░░░░░░░░   10.03 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
