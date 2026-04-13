@@ -16,11 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Other          41 mins               ██████████████░░░░░░░░░░░   55.78 %
-Diff           14 mins               ████▓░░░░░░░░░░░░░░░░░░░░   19.23 %
-Desktop file   7 mins                ██▓░░░░░░░░░░░░░░░░░░░░░░   10.20 %
-Java           4 mins                █▓░░░░░░░░░░░░░░░░░░░░░░░   06.40 %
-Kotlin         4 mins                █▓░░░░░░░░░░░░░░░░░░░░░░░   06.29 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
