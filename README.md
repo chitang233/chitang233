@@ -16,9 +16,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-YAML         43 mins               ██████████████████▓░░░░░░   75.00 %
-Other        12 mins               █████▒░░░░░░░░░░░░░░░░░░░   21.02 %
-TypeScript   2 mins                █░░░░░░░░░░░░░░░░░░░░░░░░   03.98 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
